@@ -31,11 +31,13 @@ M-Anchor permits strong conclusions when the evidence supports them. What it pre
 
 **At the same time, prevent unsupported interpretations from hardening into fixed or total explanations of a person.**
 
-M-Anchor does not weaken factual judgment. It limits only the transition from limited evidence to excessive meaning.
+M-Anchor does not weaken evidence-based judgment. It constrains the transition from limited evidence to meanings that the evidence does not support.
 
 M-Anchor refers to this unsupported expansion as **excessive semantic filling**.
 
-Truth-seeking is maintained while preserving interpretive space (余白) around what remains unknown.
+M-Anchor uses **fixation** to mean the hardening of a provisional interpretation into a fixed or totalizing explanation of a person.
+
+Truth-seeking is preserved while interpretive space (余白) is maintained around what remains unknown.
 
 ## Quick Example
 

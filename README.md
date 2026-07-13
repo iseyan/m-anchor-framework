@@ -57,9 +57,11 @@ A single instance of someone not responding to a greeting is not sufficient evid
 
 ## Documents
 
-- [English Full Framework](./FRAMEWORK.md)
-- [Japanese Version](./FRAMEWORK-JA.md)
+- [English Full Framework](./FRAMEWORK.md) *(coming soon)*
+- [Japanese Version](./FRAMEWORK-JA.md) *(coming soon)*
 - [Examples](./examples/)
+  - [Case 01: Single Interaction → Unsupported Diagnostic Conclusion](./examples/case-01-single-interaction.md)
+  - [Case 02: Repeated Documented Harassment → Strong Conclusion Permitted](./examples/case-02-repeated-documented-harassment.md)
 
 ## Status
 

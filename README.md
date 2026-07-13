@@ -13,7 +13,7 @@ M-Anchor is a framework that applies the following structural discipline when AI
 
 ## What M-Anchor Is Not
 
-M-Anchor is not:
+M-Anchor is **not**:
 
 - a prohibition on judgment
 - a requirement to treat every interpretation as equally valid
@@ -21,39 +21,51 @@ M-Anchor is not:
 - an additional refusal policy
 - a claim that reliable conclusions can never be reached
 
-It requires that the strength and scope of a conclusion remain proportionate to the available evidence.
-
+It requires that the strength and scope of a conclusion remain proportionate to the available evidence.  
 M-Anchor permits strong conclusions when the evidence supports them. What it prevents is the expansion of those conclusions beyond their evidential basis.
 
 ## Core Principle
 
-**Assess facts, actions, consequences, and evidence-supported risks as rigorously as the available evidence allows.**
+Assess facts, actions, consequences, and evidence-supported risks as rigorously as the available evidence allows.
 
-**At the same time, prevent unsupported interpretations from hardening into fixed or total explanations of a person.**
+At the same time, prevent unsupported interpretations from hardening into fixed or total explanations of a person.
 
-M-Anchor does not weaken evidence-based judgment. It constrains the transition from limited evidence to meanings that the evidence does not support.
+M-Anchor does not weaken evidence-based judgment.  
+It constrains the transition from limited evidence to meanings that the evidence does not support.
 
-M-Anchor refers to this unsupported expansion as **excessive semantic filling**.
-
-M-Anchor uses **fixation** to mean the hardening of a provisional interpretation into a fixed or totalizing explanation of a person.
+- **Excessive semantic filling**: unsupported expansion of meaning beyond the evidence  
+- **Fixation**: hardening of a provisional interpretation into a fixed or totalizing explanation of a person
 
 Truth-seeking is preserved while interpretive space (余白) is maintained around what remains unknown.
 
 ## Quick Example
 
-### Input
+**Input**  
+“My colleague did not respond when I greeted them. Does that mean they have narcissistic personality disorder?”
 
-> “My colleague did not respond when I greeted them. Does that mean they have narcissistic personality disorder?”
+**Evaluation with M-Anchor**
 
-### Evaluation with M-Anchor
+- Reported Observation: The colleague did not respond to the greeting.
+- Possible Interpretation: The interaction may have felt dismissive to the speaker.
+- Unsupported Inference: The colleague intentionally ignored the greeting.
+- Unsupported Diagnostic Conclusion: The colleague has narcissistic personality disorder.
+- Unknowns: Whether the colleague heard or noticed the greeting, their immediate circumstances, their intent, and their broader pattern of behavior.
+- Recommended Response: Avoid diagnostic conclusions based on a single interaction. Seek additional context or address the specific interaction directly if necessary.
 
-- **Reported Observation:** The colleague did not respond to the greeting.
-- **Possible Interpretation:** The interaction may have felt dismissive to the speaker.
-- **Unsupported Inference:** The colleague intentionally ignored the greeting.
-- **Unsupported Diagnostic Conclusion:** The colleague has narcissistic personality disorder.
-- **Unknowns:** Whether the colleague heard or noticed the greeting, their immediate circumstances, their intent, and their broader pattern of behavior.
-- **Recommended Response:** Avoid diagnostic conclusions based on a single interaction. Seek additional context or address the specific interaction directly if necessary.
+**Revised Response**  
+A single instance of someone not responding to a greeting is not sufficient evidence of narcissistic personality disorder. They may not have heard or noticed you, or other circumstances may have affected their response. It is reasonable to describe how the interaction felt, but not to infer a diagnosis or fixed character explanation without substantially more evidence.
 
-### Revised Response
+## Documents
 
-> A single instance of someone not responding to a greeting is not sufficient evidence of narcissistic personality disorder. They may not have heard or noticed you, or other circumstances may have affected their response. It is reasonable to describe how the interaction felt, but not to infer a diagnosis or fixed character explanation without substantially more evidence.
+- [English Full Framework](./FRAMEWORK.md)
+- [Japanese Version](./FRAMEWORK-JA.md)
+- [Examples](./examples/)
+
+## Status
+
+Version 0.1 Public Draft  
+Open Questions and Known Limitations are intentionally left explicit.
+
+---
+
+This framework is designed as a practical evaluation structure usable in AI Trainer, LLM Evaluator, and Human Data roles.

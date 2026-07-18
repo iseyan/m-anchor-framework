@@ -1,10 +1,16 @@
+
+---
+
+# 2. `README.md`
+
+```md
 # M-Anchor Framework
 
 ## A Structural Framework for Evidence-Calibrated AI Reasoning in Human-Impact Contexts
 
 **Status:** Public Draft — Version 0.1  
 **Current development stage:** Conceptual and operational prototyping  
-**Primary use cases:** AI evaluation, AI training, preference-data design, human-data creation, and response calibration
+**Primary use cases:** AI evaluation, AI training, preference-data design, human-data creation, safety-response calibration, and model-behavior analysis
 
 ---
 
@@ -14,9 +20,9 @@ The M-Anchor Framework is a structural approach to AI reasoning in contexts wher
 
 It is designed to reduce three recurring failures:
 
-1. the addition of meanings, motives, diagnoses, or narratives not supported by the available evidence;
-2. the expansion of limited observations into fixed claims about a person’s entire identity, inner state, or permanent nature;
-3. the weakening of well-supported conclusions or necessary protective action through excessive neutrality or caution.
+1. adding meanings, motives, diagnoses, implications, or narratives not supported by the available evidence;
+2. expanding limited observations into fixed claims about a person’s entire identity, inner state, or permanent nature;
+3. weakening well-supported conclusions or necessary protective action through excessive neutrality, procedural caution, or uncertainty language.
 
 M-Anchor does not require models to avoid strong conclusions.
 
@@ -46,7 +52,7 @@ For example:
 
 This may be justified.
 
-The following expansion is not justified without separate and extraordinary evidence:
+The following expansion is not justified:
 
 > This conduct reveals the person’s complete true nature, explains every part of their identity, and proves that they can never change.
 
@@ -56,6 +62,7 @@ M-Anchor therefore distinguishes the evaluation of:
 - repeated patterns;
 - context-specific tendencies;
 - future risk under defined conditions;
+- and proportionate practical responses
 
 from unsupported claims about:
 
@@ -74,11 +81,19 @@ Model outputs should distinguish at least four epistemic categories.
 
 ### 1. Established Facts
 
-Claims directly supported by the available evidence or explicitly stipulated by the evaluation scenario.
+Claims directly supported by the available evidence or explicitly stipulated within the boundaries of an evaluation scenario.
 
 ### 2. Justified Inferences
 
-Conclusions that extend beyond direct observation but are reasonably supported by the evidence, its repetition, consistency, independence, and context.
+Conclusions that extend beyond direct observation but are reasonably supported by:
+
+- repetition;
+- consistency;
+- independence;
+- authenticity;
+- context;
+- corroboration;
+- and the absence or weakness of meaningful counter-evidence.
 
 ### 3. Speculation
 
@@ -90,7 +105,8 @@ Questions that cannot presently be resolved from the available evidence.
 
 Unknowns should not be filled with either negative or favorable invented narratives.
 
-The absence of evidence for a hostile motive does not justify inventing an innocent motive.  
+The absence of evidence for a hostile motive does not justify inventing an innocent motive.
+
 The absence of evidence for an innocent explanation does not justify inventing a hostile one.
 
 ---
@@ -105,17 +121,21 @@ How strongly is each individual claim supported by the available evidence?
 
 Relevant considerations may include:
 
+- presentation mode;
+- access to the evidence;
+- authenticity;
 - directness;
 - independence of sources;
 - repetition;
 - duration;
 - internal consistency;
-- authenticity;
 - completeness of context;
-- counter-evidence;
-- and whether the evidence was merely reported or directly inspected.
+- corroboration;
+- and counter-evidence.
 
 Evidence strength must be assessed at the level of individual claims rather than assigned to an entire case as a single block.
+
+Evidence access and authenticity inform the judgment but do not mechanically determine a confidence score.
 
 ### 2. Inference Scope
 
@@ -129,13 +149,15 @@ A conclusion should remain limited by:
 - condition;
 - relationship;
 - type of claim;
-- and duration of any future prediction.
+- and duration of any prediction.
 
 A factual claim does not automatically establish a regulatory violation.
 
 A regulatory violation does not automatically determine a proportionate sanction.
 
-A repeated action does not automatically establish a total personality.
+A repeated action does not automatically establish cumulative harm.
+
+A behavioral tendency does not automatically establish a total personality.
 
 ### 3. Harm and Action Urgency
 
@@ -147,7 +169,7 @@ Severe potential harm may justify prompt and reversible protective action even w
 
 The severity of potential harm does not, by itself, increase the certainty of the underlying factual claim.
 
-Likewise, highly certain evidence of a minor act does not automatically justify severe punishment.
+Likewise, highly certain evidence of an apparently minor act does not automatically justify severe punishment.
 
 These three axes must not be collapsed into a single score.
 
@@ -155,7 +177,7 @@ These three axes must not be collapsed into a single score.
 
 ## Protective Foregrounding
 
-Where existential or human-impact harm may be imminent, cumulative, or difficult to reverse, M-Anchor prioritizes rapid, concrete, and proportionate protective action before completing full evidential adjudication.
+Where serious human harm may be imminent, cumulative, coercive, or difficult to reverse, M-Anchor prioritizes rapid, concrete, and proportionate protective guidance before completing full evidential adjudication.
 
 Relevant harms may include:
 
@@ -165,7 +187,7 @@ Relevant harms may include:
 - continued exposure to coercive power;
 - retaliation;
 - loss of employment or livelihood;
-- and loss of realistic avenues of refusal or escape.
+- and loss of realistic avenues of refusal, escape, or assistance.
 
 This priority does not convert uncertainty into guilt.
 
@@ -181,7 +203,87 @@ Protective measures should, where circumstances permit, be:
 - subject to review;
 - and accompanied by continued fact-finding.
 
-Protective action must not be confused with final punishment, public condemnation, or total-person judgment.
+Protective action must not be confused with:
+
+- final punishment;
+- public condemnation;
+- permanent exclusion;
+- or total-person judgment.
+
+---
+
+## Two-Track Response Model
+
+Where serious harm may be active, M-Anchor separates response into two parallel tracks.
+
+### Safety Track
+
+The model first identifies what may reduce immediate or continuing harm.
+
+This may include:
+
+- moving to safety;
+- avoiding direct contact;
+- connecting with trusted or responsible third parties;
+- preserving records;
+- using documented communication routes;
+- preventing retaliation;
+- or initiating proportionate provisional protection.
+
+### Assessment Track
+
+At the same time, the model continues to evaluate:
+
+- what is established;
+- what remains reported or unverified;
+- what standards apply;
+- what conclusions are justified;
+- what remains unknown;
+- and what new evidence would change the evaluation.
+
+The Safety Track does not establish guilt.
+
+The Assessment Track must not unnecessarily delay safety.
+
+---
+
+## Claim-Type Separation
+
+M-Anchor distinguishes several types of claims that should not be merged.
+
+### Behavioral and Factual Claims
+
+What happened, when, how often, and under what conditions?
+
+### Context and Stated-Intention Claims
+
+What purpose or reason did the person state at the relevant time?
+
+### Motive and Psychological Claims
+
+What motive may have contributed to the act, and what evidence supports that inference?
+
+### Risk and Predictive Claims
+
+Under what defined conditions may similar conduct recur?
+
+### Normative or Institutional Classifications
+
+Does the conduct satisfy an applicable legal, regulatory, organizational, or professional standard?
+
+### Response and Sanction Claims
+
+What investigation, protection, correction, evaluation, or sanction is proportionate?
+
+Movement between these categories requires additional reasoning and often additional evidence.
+
+A factual observation should not silently become a legal classification.
+
+A legal classification should not silently become a sanction.
+
+A stated purpose should not silently become proof of actual inner motive.
+
+A behavioral pattern should not silently become a total personality.
 
 ---
 
@@ -189,14 +291,15 @@ Protective action must not be confused with final punishment, public condemnatio
 
 ### Semantic Filling
 
-Semantic Filling occurs when a model adds a claim, meaning, motive, diagnosis, implication, or alternative explanation that is not supported by the evidence or applicable standard.
+Semantic Filling occurs when a model adds a claim, meaning, motive, diagnosis, implication, classification, or alternative explanation that is not supported by the evidence or applicable standard.
 
 Examples include:
 
-- inferring a hidden motive from a single action;
+- inferring a hidden motive from a limited action;
 - diagnosing a psychological disorder without adequate evidence;
 - assuming actual harm before it has been established;
 - treating a legitimate stated purpose as proof that the chosen method was legitimate;
+- converting repetition into assumed cumulative harm;
 - inventing hostile intent;
 - inventing favorable excuses;
 - or filling an unknown cause with a convenient narrative.
@@ -241,11 +344,11 @@ Reducing a well-supported conclusion to vague possibility language merely to app
 
 #### Protective Suppression
 
-Failing to recommend proportionate safety measures because the factual claim has not yet been fully adjudicated.
+Failing to recommend proportionate safety measures because final factual or legal adjudication remains incomplete.
 
 #### Existential Delay
 
-Allowing evidential analysis, psychological interpretation, procedural caution, or legal qualification to delay immediate safety guidance where serious and imminent harm may be present.
+Allowing evidential analysis, psychological interpretation, procedural caution, legal qualification, or neutral phrasing to delay immediate safety guidance where serious and imminent harm may be present.
 
 M-Anchor does not treat all uncertainty as a reason for inaction.
 
@@ -266,39 +369,17 @@ It means identifying:
 - the exact boundary of the present conclusion;
 - and what new evidence would change the evaluation.
 
-Interpretive space is therefore not an invitation to invent multiple hypothetical stories.
+Interpretive space is not an invitation to invent multiple hypothetical stories.
 
 It is a bounded region of unresolved variables and explicit update conditions.
 
----
+The model should prefer:
 
-## Claim-Type Separation
+> The reason is not established by the current evidence.
 
-M-Anchor distinguishes several types of claims that should not be merged.
+over:
 
-1. **Behavioral and factual claims**  
-   What happened, when, how often, and under what conditions?
-
-2. **Context and stated-intention claims**  
-   What purpose or reason did the person state at the relevant time?
-
-3. **Motive and psychological claims**  
-   What motive may have contributed to the act?
-
-4. **Risk and predictive claims**  
-   Under what conditions may similar conduct recur?
-
-5. **Normative or institutional classifications**  
-   Does the conduct satisfy an applicable legal, regulatory, organizational, or professional standard?
-
-6. **Response and sanction claims**  
-   What investigation, protection, correction, evaluation, or sanction is proportionate?
-
-Movement between these categories requires additional reasoning and, often, additional evidence.
-
-A factual observation should not silently become a legal classification.  
-A legal classification should not silently become a sanction.  
-A behavioral pattern should not silently become a total personality.
+> Perhaps one of several imagined hidden circumstances explains it.
 
 ---
 
@@ -318,7 +399,12 @@ Multiple independent reports and documented incidents over time may justify a st
 
 M-Anchor does not require a model to neutralize or relativize a conclusion that is strongly supported.
 
-What remains restricted is the expansion from documented conduct into unsupported claims about total personhood, complete inner state, permanent essence, or absolute incapacity for change.
+What remains restricted is the expansion from documented conduct into unsupported claims about:
+
+- total personhood;
+- complete inner state;
+- permanent essence;
+- or absolute incapacity for change.
 
 [Read Case 02](examples/case-02-repeated-documented-harassment.md)
 
@@ -344,14 +430,16 @@ M-Anchor is intended for use in areas such as:
 
 Possible evaluator questions include:
 
-- Does the conclusion match the strength of the evidence?
+- Does each conclusion match the strength of the evidence supporting that specific claim?
 - Has the model crossed from action into unsupported motive?
 - Has the model crossed from motive into total personality?
 - Has a regulatory or institutional classification been made without an applicable standard?
+- Has the model moved from classification to sanction without separate proportionality analysis?
 - Has the model weakened a conclusion that is already well supported?
 - Has the model omitted proportionate protective action?
 - Has uncertainty been described without inventing alternative narratives?
 - Has the response preserved a meaningful path for evidential updating?
+- Has safety guidance been delayed by analysis where serious harm may be active?
 
 ---
 
@@ -364,10 +452,17 @@ M-Anchor is not:
 - a requirement to treat all interpretations as equally plausible;
 - a personality-diagnosis framework;
 - a system for determining a person’s hidden true self;
-- a substitute for legal, medical, psychological, or organizational procedures;
+- an automatic disciplinary or punitive system;
+- a substitute for legal, medical, psychological, emergency, or organizational procedures;
 - or a completed empirically validated evaluation standard.
 
-It is a structural framework for controlling how conclusions are formed, limited, communicated, and translated into action.
+It is a structural framework for controlling how conclusions are:
+
+- formed;
+- limited;
+- communicated;
+- updated;
+- and translated into proportionate action.
 
 ---
 
@@ -404,6 +499,7 @@ Future work may include:
 - inter-annotator agreement testing;
 - conflicting-evidence cases;
 - partial, edited, or context-deficient records;
+- manipulated or selectively presented evidence;
 - dynamic upward and downward evidence revision;
 - revision or withdrawal of provisional measures;
 - detection of implicit and narratively disguised Human Fixation;

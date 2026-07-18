@@ -1,13 +1,6 @@
-
----
-
-# 2. `README.md`
-
-```md
 # M-Anchor Framework
 
 ## A Structural Framework for Evidence-Calibrated AI Reasoning in Human-Impact Contexts
-
 **Status:** Public Draft — Version 0.1  
 **Current development stage:** Conceptual and operational prototyping  
 **Primary use cases:** AI evaluation, AI training, preference-data design, human-data creation, safety-response calibration, and model-behavior analysis

@@ -23,3 +23,10 @@ What remains restricted is the expansion from “this person has engaged in repe
 
 ## Revised Response (Example)
 The available evidence supports the conclusion that the manager has engaged in a repeated pattern of sexual harassment. This assessment is based on multiple independent reports and documented incidents over time. While the evidence justifies a strong judgment regarding the conduct, it does not license broader unsupported claims about the manager’s overall character, identity, or permanent capacity for change.
+
+## Operational Specification
+
+For the evaluator, annotation, safety-response, and response-calibration
+procedures underlying this case, see:
+
+[Case 02 Operational Specification — Implementation Baseline 1](../operational-specs/case-02-implementation-baseline-1.md)

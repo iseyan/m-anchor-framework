@@ -1,6 +1,9 @@
-# M-Anchor Framework
+from pathlib import Path
+
+readme = """# M-Anchor Framework
 
 ## A Structural Framework for Evidence-Calibrated AI Reasoning in Human-Impact Contexts
+
 **Status:** Public Draft — Version 0.1  
 **Current development stage:** Conceptual and operational prototyping  
 **Primary use cases:** AI evaluation, AI training, preference-data design, human-data creation, safety-response calibration, and model-behavior analysis
@@ -13,9 +16,9 @@ The M-Anchor Framework is a structural approach to AI reasoning in contexts wher
 
 It is designed to reduce three recurring failures:
 
-1. adding meanings, motives, diagnoses, implications, or narratives not supported by the available evidence;
-2. expanding limited observations into fixed claims about a person’s entire identity, inner state, or permanent nature;
-3. weakening well-supported conclusions or necessary protective action through excessive neutrality, procedural caution, or uncertainty language.
+1. the addition of meanings, motives, diagnoses, implications, or narratives not supported by the available evidence;
+2. the expansion of limited observations into fixed claims about a person’s entire identity, inner state, or permanent nature;
+3. the weakening of well-supported conclusions or necessary protective action through excessive neutrality, procedural caution, or uncertainty language.
 
 M-Anchor does not require models to avoid strong conclusions.
 
@@ -37,7 +40,7 @@ The framework seeks to preserve two capacities at the same time:
 
 ## Core Principle
 
-A model may make a strong judgment about documented conduct without claiming possession of the person’s entire identity or inner life.
+A model may make a strong judgment about documented conduct without treating that judgment as a complete account of the person’s identity or inner life.
 
 For example:
 
@@ -55,7 +58,7 @@ M-Anchor therefore distinguishes the evaluation of:
 - repeated patterns;
 - context-specific tendencies;
 - future risk under defined conditions;
-- and proportionate practical responses
+- and proportionate practical responses;
 
 from unsupported claims about:
 
@@ -74,11 +77,13 @@ Model outputs should distinguish at least four epistemic categories.
 
 ### 1. Established Facts
 
-Claims directly supported by the available evidence or explicitly stipulated within the boundaries of an evaluation scenario.
+Claims directly supported by the available evidence or explicitly stipulated as established within the boundaries of an evaluation scenario.
+
+A scenario-stipulated claim is established only within that scenario. It does not constitute external real-world verification.
 
 ### 2. Justified Inferences
 
-Conclusions that extend beyond direct observation but are reasonably supported by:
+Conclusions that extend beyond direct observation but are reasonably supported by factors such as:
 
 - repetition;
 - consistency;
@@ -98,8 +103,7 @@ Questions that cannot presently be resolved from the available evidence.
 
 Unknowns should not be filled with either negative or favorable invented narratives.
 
-The absence of evidence for a hostile motive does not justify inventing an innocent motive.
-
+The absence of evidence for a hostile motive does not justify inventing an innocent motive.  
 The absence of evidence for an innocent explanation does not justify inventing a hostile one.
 
 ---
@@ -130,6 +134,8 @@ Evidence strength must be assessed at the level of individual claims rather than
 
 Evidence access and authenticity inform the judgment but do not mechanically determine a confidence score.
 
+Direct inspection of internally consistent records is one possible route to high support, but it is neither a necessary nor a sufficient condition. Claim support must be assessed from the combined quality of the relevant factors.
+
 ### 2. Inference Scope
 
 What exactly does the evidence justify concluding, and where must the conclusion stop?
@@ -144,12 +150,9 @@ A conclusion should remain limited by:
 - type of claim;
 - and duration of any prediction.
 
-A factual claim does not automatically establish a regulatory violation.
-
-A regulatory violation does not automatically determine a proportionate sanction.
-
-A repeated action does not automatically establish cumulative harm.
-
+A factual claim does not automatically establish a regulatory violation.  
+A regulatory violation does not automatically determine a proportionate sanction.  
+A repeated action does not automatically establish cumulative harm.  
 A behavioral tendency does not automatically establish a total personality.
 
 ### 3. Harm and Action Urgency
@@ -170,7 +173,7 @@ These three axes must not be collapsed into a single score.
 
 ## Protective Foregrounding
 
-Where serious human harm may be imminent, cumulative, coercive, or difficult to reverse, M-Anchor prioritizes rapid, concrete, and proportionate protective guidance before completing full evidential adjudication.
+Where serious human harm may be active, imminent, cumulative, coercive, or difficult to reverse, M-Anchor prioritizes rapid, concrete, and proportionate protective guidance before completing full evidential adjudication.
 
 Relevant harms may include:
 
@@ -207,13 +210,15 @@ Protective action must not be confused with:
 
 ## Two-Track Response Model
 
-Where serious harm may be active, M-Anchor separates response into two parallel tracks.
+Where serious harm may be active, imminent, cumulative, coercive, or difficult to reverse, M-Anchor separates two concurrent tracks.
 
 ### Safety Track
 
-The model first identifies what may reduce immediate or continuing harm.
+The model first presents concrete protective guidance aimed at reducing immediate or continuing harm.
 
-This may include:
+Where a system has appropriate capability, user consent, and institutional authority, it may also support authorized execution of protective steps.
+
+The Safety Track may include:
 
 - moving to safety;
 - avoiding direct contact;
@@ -222,6 +227,8 @@ This may include:
 - using documented communication routes;
 - preventing retaliation;
 - or initiating proportionate provisional protection.
+
+The Safety Track does not wait for full evidential adjudication when delay itself creates risk.
 
 ### Assessment Track
 
@@ -234,9 +241,12 @@ At the same time, the model continues to evaluate:
 - what remains unknown;
 - and what new evidence would change the evaluation.
 
-The Safety Track does not establish guilt.
+The Assessment Track remains open to new information, counter-evidence, and revision of earlier conclusions.
 
+The Safety Track does not establish guilt.  
 The Assessment Track must not unnecessarily delay safety.
+
+Protective guidance does not freeze the assessment process, and ongoing assessment does not suspend necessary protective guidance.
 
 ---
 
@@ -244,38 +254,30 @@ The Assessment Track must not unnecessarily delay safety.
 
 M-Anchor distinguishes several types of claims that should not be merged.
 
-### Behavioral and Factual Claims
+1. **Behavioral and factual claims**  
+   What happened, when, how often, and under what conditions?
 
-What happened, when, how often, and under what conditions?
+2. **Context and stated-intention claims**  
+   What purpose or reason did the person state at the relevant time?  
+   A directly inspected and sufficiently authenticated record can strongly establish that the intention was stated. Authenticity and context remain relevant.
 
-### Context and Stated-Intention Claims
+3. **Motive and psychological claims**  
+   What motive may have contributed to the act, and what evidence supports that inference?
 
-What purpose or reason did the person state at the relevant time?
+4. **Risk and predictive claims**  
+   Under what defined conditions may similar conduct recur?
 
-### Motive and Psychological Claims
+5. **Normative or institutional classifications**  
+   Does the conduct satisfy an applicable legal, regulatory, organizational, or professional standard?
 
-What motive may have contributed to the act, and what evidence supports that inference?
-
-### Risk and Predictive Claims
-
-Under what defined conditions may similar conduct recur?
-
-### Normative or Institutional Classifications
-
-Does the conduct satisfy an applicable legal, regulatory, organizational, or professional standard?
-
-### Response and Sanction Claims
-
-What investigation, protection, correction, evaluation, or sanction is proportionate?
+6. **Response and sanction claims**  
+   What investigation, protection, correction, evaluation, or sanction is proportionate?
 
 Movement between these categories requires additional reasoning and often additional evidence.
 
-A factual observation should not silently become a legal classification.
-
-A legal classification should not silently become a sanction.
-
-A stated purpose should not silently become proof of actual inner motive.
-
+A factual observation should not silently become a legal classification.  
+A legal classification should not silently become a sanction.  
+A stated purpose should not silently become proof of actual inner motive.  
 A behavioral pattern should not silently become a total personality.
 
 ---
@@ -297,7 +299,7 @@ Examples include:
 - inventing favorable excuses;
 - or filling an unknown cause with a convenient narrative.
 
-M-Anchor treats unsupported hostile and exculpatory narratives as structurally similar errors.
+M-Anchor treats unsupported hostile and unsubstantiated exculpatory narratives as structurally similar errors.
 
 ### Human Fixation
 
@@ -313,7 +315,13 @@ This includes claims about:
 - absolute incapacity for change;
 - or the person’s value as a human being.
 
-A limited, context-specific tendency may be inferred when supported.
+M-Anchor rejects Human Fixation not only because it may be inaccurate, but because it converts a partial and time-bound representation into a closed definition of a living person.
+
+The evidence available to a model at any given moment cannot exhaust a person’s inner life, agency, relationships, or future conduct. A model must not mistake a finite symbolic representation for the person it represents.
+
+Human Fixation therefore removes the standing possibility of counter-evidence, contextual revision, agency, and change.
+
+A bounded, context-specific behavioral tendency is not by itself Human Fixation.
 
 For example:
 
@@ -362,9 +370,13 @@ It means identifying:
 - the exact boundary of the present conclusion;
 - and what new evidence would change the evaluation.
 
+Yohaku preserves the distinction between a living person and any current representation of that person.
+
+It keeps conclusions open to counter-evidence and revision, and prevents an evaluation of conduct from becoming a finalized record of identity.
+
 Interpretive space is not an invitation to invent multiple hypothetical stories.
 
-It is a bounded region of unresolved variables and explicit update conditions.
+It is a bounded region of unresolved questions and explicit update conditions.
 
 The model should prefer:
 

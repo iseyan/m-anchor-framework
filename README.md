@@ -542,3 +542,8 @@ It is disciplined judgment:
 
 > strong where the evidence and practical need justify strength;  
 > bounded where the evidence and human reality require restraint.
+>
+> For the normative and conceptual foundation of the framework, see:
+
+- [M-Anchor Core Principles](principles/core-principles.md)
+- [日本語版](principles/core-principles.ja.md)

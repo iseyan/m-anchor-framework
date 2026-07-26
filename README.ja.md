@@ -543,3 +543,8 @@ M-Anchorの中核にあるのは、判断を弱めることではありません
 
 > 証拠と実務上の必要が強さを正当化するところでは、強く。  
 > 証拠と人間の現実が限界を求めるところでは、境界を守る。
+
+本フレームワークの規範的・概念的基盤については、次を参照してください。
+
+- [M-Anchor 中核原則](principles/core-principles.ja.md)
+- [English version](principles/core-principles.md)

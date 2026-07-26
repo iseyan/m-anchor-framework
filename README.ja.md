@@ -1,8 +1,3 @@
-本フレームワークの規範的・概念的基盤については、次を参照してください。
-
-- [M-Anchor 中核原則](principles/core-principles.ja.md)
-- [English version](principles/core-principles.md)
-
 # M-Anchor Framework
 
 ## 人の内心や人格を決めつけず、状況と証拠に基づいて判断と対応を導くための構造的フレームワーク

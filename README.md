@@ -1,8 +1,4 @@
-from pathlib import Path
-
-readme = """# M-Anchor Framework
-
-## A Structural Framework for Evidence-Calibrated AI Reasoning in Human-Impact Contexts
+# A Structural Framework for Evidence-Calibrated AI Reasoning in Human-Impact Contexts
 
 **Status:** Public Draft — Version 0.1  
 **Current development stage:** Conceptual and operational prototyping  

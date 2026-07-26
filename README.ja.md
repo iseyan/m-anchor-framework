@@ -1,7 +1,7 @@
-For the normative and conceptual foundation of the framework, see:
+本フレームワークの規範的・概念的基盤については、次を参照してください。
 
-- [M-Anchor Core Principles](principles/core-principles.md)
-- [日本語版](principles/core-principles.ja.md)
+- [M-Anchor 中核原則](principles/core-principles.ja.md)
+- [English version](principles/core-principles.md)
 
 # M-Anchor Framework
 

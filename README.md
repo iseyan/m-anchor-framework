@@ -518,12 +518,15 @@ Future work may include:
 ```text
 m-anchor-framework/
 ├─ README.md
+├─ README.ja.md
+├─ principles/
+│  ├─ core-principles.md
+│  └─ core-principles.ja.md
 ├─ examples/
 │  ├─ case-01-single-interaction.md
 │  └─ case-02-repeated-documented-harassment.md
 └─ operational-specs/
    └─ case-02-implementation-baseline-1.md
-```
 
 ---
 

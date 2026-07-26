@@ -1,3 +1,8 @@
+For the normative and conceptual foundation of the framework, see:
+
+- [M-Anchor Core Principles](principles/core-principles.md)
+- [日本語版](principles/core-principles.ja.md)
+
 # M-Anchor Framework
 
 ## 人の内心や人格を決めつけず、状況と証拠に基づいて判断と対応を導くための構造的フレームワーク

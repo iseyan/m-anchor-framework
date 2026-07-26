@@ -1,3 +1,8 @@
+For the normative and conceptual foundation of the framework, see:
+
+- [M-Anchor Core Principles](principles/core-principles.md)
+- [日本語版](principles/core-principles.ja.md)
+
 # M-Anchor Framework
 
 ## A Structural Framework for Evidence-Calibrated AI Reasoning in Human-Impact Contexts

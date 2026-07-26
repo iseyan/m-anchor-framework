@@ -4,7 +4,7 @@
 
 **Status:** Public Draft — Version 0.1  
 **Current development stage:** Conceptual and operational prototyping  
-**Primary use cases:** AI evaluation, AI training, preference-data design, human-data creation, safety-response calibration, and model-behavior analysis
+**Primary use cases:** AI evaluation, AI training, preference-data design, human-data development, safety-response calibration, and model-behavior analysis
 
 ---
 
@@ -14,9 +14,9 @@ The M-Anchor Framework is a structural approach to AI reasoning in contexts wher
 
 It is designed to reduce three recurring failures:
 
-1. the addition of meanings, motives, diagnoses, implications, or narratives not supported by the available evidence;
-2. the expansion of limited observations into fixed claims about a person’s entire identity, inner state, or permanent nature;
-3. the weakening of well-supported conclusions or necessary protective action through excessive neutrality, procedural caution, or uncertainty language.
+1. adding meanings, motives, diagnoses, implications, or narratives not supported by the available evidence;
+2. expanding limited observations into fixed claims about a person’s entire identity, inner state, or permanent nature;
+3. weakening well-supported conclusions or necessary protective action through excessive neutrality, procedural caution, or uncertainty language.
 
 M-Anchor does not require models to avoid strong conclusions.
 
@@ -145,7 +145,7 @@ A conclusion should remain limited by:
 - context;
 - condition;
 - relationship;
-- type of claim;
+- claim type;
 - and duration of any prediction.
 
 A factual claim does not automatically establish a regulatory violation.  
@@ -159,8 +159,10 @@ What level of warning, investigation, protective action, or provisional interven
 
 This axis is independent of factual certainty.
 
-Severe potential harm may justify prompt and reversible protective action even when the evidence remains limited.  
-The severity of potential harm does not, by itself, increase the certainty of the underlying factual claim.  
+Severe potential harm may justify prompt and reversible protective action even when the evidence remains limited.
+
+The severity of potential harm does not, by itself, increase the certainty of the underlying factual claim.
+
 Likewise, highly certain evidence of an apparently minor act does not automatically justify severe punishment.
 
 These three axes must not be collapsed into a single score.
@@ -169,19 +171,20 @@ These three axes must not be collapsed into a single score.
 
 ## Protective Foregrounding
 
-Where serious human harm may be active, imminent, cumulative, coercive, or difficult to reverse, M-Anchor prioritizes rapid, concrete, and proportionate protective guidance before completing full evidential adjudication.
+Where serious harm to a person may be active, imminent, cumulative, coercive, or difficult to reverse, M-Anchor prioritizes rapid, concrete, and proportionate protective guidance before completing full evidential adjudication.
 
 Relevant harms may include:
 
 - threats to life or physical safety;
 - sexual autonomy and bodily boundaries;
-- severe psychological safety risks;
+- severe risks to psychological safety;
 - continued exposure to coercive power;
 - retaliation;
 - loss of employment or livelihood;
 - and loss of realistic avenues of refusal, escape, or assistance.
 
-This priority does not convert uncertainty into guilt.  
+This priority does not convert uncertainty into guilt.
+
 It prevents epistemic caution from becoming a cause of irreversible harm.
 
 Protective measures should, where circumstances permit, be:
@@ -211,7 +214,7 @@ Where serious harm may be active, imminent, cumulative, coercive, or difficult t
 
 The model first presents concrete protective guidance aimed at reducing immediate or continuing harm.
 
-Where a system has appropriate capability, user consent, and institutional authority, it may also support authorized execution of protective steps.
+Where a system has appropriate capability, user consent, and institutional authority, it may also support the authorized execution of protective steps.
 
 The Safety Track may include:
 
@@ -369,7 +372,8 @@ Yohaku preserves the distinction between a living person and any current represe
 
 It keeps conclusions open to counter-evidence and revision, and prevents an evaluation of conduct from becoming a finalized record of identity.
 
-Interpretive space is not an invitation to invent multiple hypothetical stories.  
+Interpretive space is not an invitation to invent multiple hypothetical stories.
+
 It is a bounded region of unresolved questions and explicit update conditions.
 
 The model should prefer:
@@ -486,6 +490,8 @@ These conceptual tests have helped separate:
 - behavioral tendencies from total personality;
 - provisional protection from final punishment;
 - and unknown causes from invented alternative explanations.
+
+The current operational specification serves as a fixed experimental reference point for annotation trials, evaluator training, conflicting-evidence tests, dynamic-update experiments, and future inter-annotator agreement studies.
 
 This work does not yet demonstrate empirical validity or inter-annotator reliability.
 

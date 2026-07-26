@@ -1,6 +1,6 @@
 # M-Anchor Framework
 
-[日本語版 README](README.md)
+[English README](README.md)
 
 ## 人の内心や人格を決めつけず、状況と証拠に基づいて判断と対応を導くための構造的フレームワーク
 

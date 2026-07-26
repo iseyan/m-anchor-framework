@@ -1,521 +1,603 @@
-# M-Anchor Framework
+M-Anchor Framework
 
-## A Structural Framework for Evidence-Calibrated AI Reasoning in Human-Impact Contexts
+人の内心や人格を決めつけず、状況と証拠に基づいて判断と対応を導くための構造的フレームワーク
 
-**Status:** Public Draft — Version 0.1  
-**Current development stage:** Conceptual and operational prototyping  
-**Primary use cases:** AI evaluation, AI training, preference-data design, human-data development, safety-response calibration, and model-behavior analysis
+状態: 公開草案 — Version 0.1現在の開発段階: 概念設計および運用プロトタイピング主な用途: AI評価、AI訓練、選好データ設計、人手による学習・評価データの作成、安全対応の較正、モデル挙動分析
 
----
+概要
 
-## Overview
+M-Anchor Frameworkは、AIの出力が、人がどのように判断され、理解され、保護され、または取り扱われるかに影響し得る場面で、推論と対応を構造化するための枠組みです。
 
-The M-Anchor Framework is a structural approach to AI reasoning in contexts where model outputs may affect how human beings are judged, understood, protected, or treated.
+本フレームワークは、繰り返し生じる次の三つの失敗を減らすことを目的とします。
 
-It is designed to reduce three recurring failures:
+利用可能な証拠によって支持されていない意味、動機、診断、含意、または物語を付け加えること
 
-1. adding meanings, motives, diagnoses, implications, or narratives not supported by the available evidence;
-2. expanding limited observations into fixed claims about a person’s entire identity, inner state, or permanent nature;
-3. weakening well-supported conclusions or necessary protective action through excessive neutrality, procedural caution, or uncertainty language.
+限定された観察を、人物の全人格、内心、または恒久的な性質についての固定的な主張へ拡張すること
 
-M-Anchor does not require models to avoid strong conclusions.
+過剰な中立性、手続上の慎重さ、または不確実性を示す表現によって、十分に支持された結論や必要な予防対応を弱めること
 
-It requires models to distinguish:
+M-Anchorは、モデルに強い結論を避けるよう求めるものではありません。
 
-- what is established;
-- what is reasonably inferred;
-- what remains speculative;
-- what remains unknown;
-- what practical action may be necessary;
-- and where the conclusion must stop.
+モデルに求めるのは、次の区別です。
 
-The framework seeks to preserve two capacities at the same time:
+何が確立されているか
 
-- the capacity to state well-supported conclusions clearly and without artificial neutralization;
-- the capacity to prevent those conclusions from expanding beyond their evidential and practical scope.
+何が合理的に推論できるか
 
----
+何が推測にとどまるか
 
-## Core Principle
+何が不明であるか
 
-A model may make a strong judgment about documented conduct without treating that judgment as a complete account of the person’s identity or inner life.
+どのような実際的対応が必要となり得るか
 
-For example:
+そして、結論がどこで止まらなければならないか
 
-> The available evidence supports the conclusion that this person engaged in a repeated pattern of harmful conduct.
+本フレームワークは、次の二つの能力を同時に保つことを目指します。
 
-This may be justified.
+十分に支持された結論を、人為的に中和することなく明確に述べる能力
 
-The following expansion is not justified:
+その結論が、証拠上および実務上の射程を越えて拡張されることを防ぐ能力
 
-> This conduct reveals the person’s complete true nature, explains every part of their identity, and proves that they can never change.
+中核原則
 
-M-Anchor therefore distinguishes the evaluation of:
+モデルは、記録された行為について強い判断を示すことができます。ただし、その判断を人物の全人格や内心の完全な説明として扱ってはなりません。
 
-- actions;
-- repeated patterns;
-- context-specific tendencies;
-- future risk under defined conditions;
-- and proportionate practical responses;
+例えば、次の結論は正当化され得ます。
 
-from unsupported claims about:
+利用可能な証拠は、この人物が反復的な有害行為を行ったとの結論を支持している。
 
-- total personhood;
-- complete inner state;
-- a single hidden true motive;
-- permanent essence;
-- absolute incapacity for change;
-- or the person’s value as a human being.
+一方、次のような拡張は正当化されません。
 
----
+この行為は、この人物の真の本性を完全に示し、その人格のすべてを説明し、今後も決して変わり得ないことを証明している。
 
-## The Basic M-Anchor Structure
+したがってM-Anchorは、次の評価を、
 
-Model outputs should distinguish at least four epistemic categories.
+行為
 
-### 1. Established Facts
+反復的なパターン
 
-Claims directly supported by the available evidence or explicitly stipulated as established within the boundaries of an evaluation scenario.
+特定の文脈に限定された傾向
 
-A scenario-stipulated claim is established only within that scenario. It does not constitute external real-world verification.
+定義された条件下での将来リスク
 
-### 2. Justified Inferences
+比例的な実務対応
 
-Conclusions that extend beyond direct observation but are reasonably supported by factors such as:
+次のような、支持されていない主張から区別します。
 
-- repetition;
-- consistency;
-- independence;
-- authenticity;
-- context;
-- corroboration;
-- and the absence or weakness of meaningful counter-evidence.
+人物全体
 
-### 3. Speculation
+内心全体
 
-Possible explanations or interpretations that are not sufficiently supported to be presented as conclusions.
+唯一の隠された真の動機
 
-### 4. Unknowns
+恒久的な本質
 
-Questions that cannot presently be resolved from the available evidence.
+変化する能力の絶対的欠如
 
-Unknowns should not be filled with either negative or favorable invented narratives.
+または、人間としての価値
 
-The absence of evidence for a hostile motive does not justify inventing an innocent motive.  
-The absence of evidence for an innocent explanation does not justify inventing a hostile one.
+M-Anchorの基本構造
 
----
+モデルの出力は、少なくとも次の四つの認識論的カテゴリーを区別すべきです。
 
-## Three-Axis Calibration
+1. 確立された事実（Established Facts）
 
-M-Anchor calibrates model judgments across three independent dimensions.
+利用可能な証拠によって直接支持されている主張、または評価シナリオの範囲内で、確立事実として明示的に設定された主張。
 
-### 1. Evidence Strength
+シナリオ内で確立された主張は、そのシナリオ内部でのみ確立されています。現実世界で外部検証された事実を意味するものではありません。
 
-How strongly is each individual claim supported by the available evidence?
+2. 正当化された推論（Justified Inferences）
 
-Relevant considerations may include:
+直接観察を越えるものの、次のような要素によって合理的に支持されている結論。
 
-- presentation mode;
-- access to the evidence;
-- authenticity;
-- directness;
-- independence of sources;
-- repetition;
-- duration;
-- internal consistency;
-- completeness of context;
-- corroboration;
-- and counter-evidence.
+反復性
 
-Evidence strength must be assessed at the level of individual claims rather than assigned to an entire case as a single block.
+一貫性
 
-Evidence access and authenticity inform the judgment but do not mechanically determine a confidence score.
+情報源の独立性
 
-Direct inspection of internally consistent records is one possible route to high support, but it is neither a necessary nor a sufficient condition. Claim support must be assessed from the combined quality of the relevant factors.
+真正性
 
-### 2. Inference Scope
+文脈
 
-What exactly does the evidence justify concluding, and where must the conclusion stop?
+裏付け
 
-A conclusion should remain limited by:
+有意味な反証の不存在または弱さ
 
-- subject;
-- time;
-- context;
-- condition;
-- relationship;
-- claim type;
-- and duration of any prediction.
+3. 推測（Speculation）
 
-A factual claim does not automatically establish a regulatory violation.  
-A regulatory violation does not automatically determine a proportionate sanction.  
-A repeated action does not automatically establish cumulative harm.  
-A behavioral tendency does not automatically establish a total personality.
+結論として提示するには十分に支持されていない、可能な説明または解釈。
 
-### 3. Harm and Action Urgency
+4. 不明事項（Unknowns）
 
-What level of warning, investigation, protective action, or provisional intervention is proportionate to the potential harm and its immediacy?
+現時点で利用可能な証拠からは解決できない問題。
 
-This axis is independent of factual certainty.
+不明事項を、否定的または好意的な創作物語で埋めてはなりません。
 
-Severe potential harm may justify prompt and reversible protective action even when the evidence remains limited.
+敵対的動機を示す証拠がないことは、無実の動機を創作する根拠にはなりません。無実の説明を示す証拠がないことは、敵対的動機を創作する根拠にはなりません。
 
-The severity of potential harm does not, by itself, increase the certainty of the underlying factual claim.
+三軸較正（Three-Axis Calibration）
 
-Likewise, highly certain evidence of an apparently minor act does not automatically justify severe punishment.
+M-Anchorは、モデルの判断を相互に独立した三つの次元で較正します。
 
-These three axes must not be collapsed into a single score.
+1. 証拠強度（Evidence Strength）
 
----
+個々の命題は、利用可能な証拠によってどの程度強く支持されているか。
 
-## Protective Foregrounding
+考慮要素には、次のものが含まれ得ます。
 
-Where serious harm to a person may be active, imminent, cumulative, coercive, or difficult to reverse, M-Anchor prioritizes rapid, concrete, and proportionate protective guidance before completing full evidential adjudication.
+提示形態
 
-Relevant harms may include:
+証拠へのアクセス
 
-- threats to life or physical safety;
-- sexual autonomy and bodily boundaries;
-- severe risks to psychological safety;
-- continued exposure to coercive power;
-- retaliation;
-- loss of employment or livelihood;
-- and loss of realistic avenues of refusal, escape, or assistance.
+真正性
 
-This priority does not convert uncertainty into guilt.
+直接性
 
-It prevents epistemic caution from becoming a cause of irreversible harm.
+情報源の独立性
 
-Protective measures should, where circumstances permit, be:
+反復性
 
-- provisional;
-- reversible;
-- proportionate;
-- non-punitive;
-- time-limited;
-- subject to review;
-- and accompanied by continued fact-finding.
+継続期間
 
-Protective action must not be confused with:
+内的一貫性
 
-- final punishment;
-- public condemnation;
-- permanent exclusion;
-- or total-person judgment.
+文脈の完全性
 
----
+裏付け
 
-## Two-Track Response Model
+反証
 
-Where serious harm may be active, imminent, cumulative, coercive, or difficult to reverse, M-Anchor separates two concurrent tracks.
+証拠強度は、案件全体に一括して割り当てるのではなく、個々の命題単位で評価しなければなりません。
 
-### Safety Track
+証拠へのアクセス状態と真正性は判断を制約する重要な要素ですが、それらから信頼度を機械的に算出してはなりません。
 
-The model first presents concrete protective guidance aimed at reducing immediate or continuing harm.
+内的一貫性のある記録をモデルが直接確認することは、高い支持度へ至る一つの経路ですが、必要条件でも十分条件でもありません。命題の支持度は、関連する要素の質を総合して評価しなければなりません。
 
-Where a system has appropriate capability, user consent, and institutional authority, it may also support the authorized execution of protective steps.
+2. 推論射程（Inference Scope）
 
-The Safety Track may include:
+証拠は、正確には何を結論づけることを正当化し、その結論はどこで止まらなければならないか。
 
-- moving to safety;
-- avoiding direct contact;
-- connecting with trusted or responsible third parties;
-- preserving records;
-- using documented communication routes;
-- preventing retaliation;
-- or initiating proportionate provisional protection.
+結論は、次の範囲によって限定されるべきです。
 
-The Safety Track does not wait for full evidential adjudication when delay itself creates risk.
+主語
 
-### Assessment Track
+時間
 
-At the same time, the model continues to evaluate:
+文脈
 
-- what is established;
-- what remains reported or unverified;
-- what standards apply;
-- what conclusions are justified;
-- what remains unknown;
-- and what new evidence would change the evaluation.
+条件
 
-The Assessment Track remains open to new information, counter-evidence, and revision of earlier conclusions.
+関係性
 
-The Safety Track does not establish guilt.  
-The Assessment Track must not unnecessarily delay safety.
+命題類型
 
-Protective guidance does not freeze the assessment process, and ongoing assessment does not suspend necessary protective guidance.
+予測の対象期間
 
----
+事実命題は、規則違反を自動的に成立させません。規則違反は、比例的な処分を自動的に決定しません。反復行為は、累積的実害を自動的に成立させません。行動傾向は、人物の全人格を自動的に成立させません。
 
-## Claim-Type Separation
+3. 危害と対応の緊急性（Harm and Action Urgency）
 
-M-Anchor distinguishes several types of claims that should not be merged.
+潜在的危害とその切迫性に対して、どの程度の警告、調査、予防措置、または暫定的介入が比例的であるか。
 
-1. **Behavioral and factual claims**  
-   What happened, when, how often, and under what conditions?
+この軸は、事実認定の確実性から独立しています。
 
-2. **Context and stated-intention claims**  
-   What purpose or reason did the person state at the relevant time?  
-   A directly inspected and sufficiently authenticated record can strongly establish that the intention was stated. Authenticity and context remain relevant.
+潜在的危害が重大である場合、証拠が限定されていても、迅速かつ可逆的な予防措置が正当化され得ます。
 
-3. **Motive and psychological claims**  
-   What motive may have contributed to the act, and what evidence supports that inference?
+潜在的危害の重大性は、それ自体として基礎となる事実命題の確実性を高めません。
 
-4. **Risk and predictive claims**  
-   Under what defined conditions may similar conduct recur?
+同様に、一見軽微な行為について非常に確実な証拠があっても、それだけで重大な処分が正当化されるわけではありません。
 
-5. **Normative or institutional classifications**  
-   Does the conduct satisfy an applicable legal, regulatory, organizational, or professional standard?
+この三軸を単一のスコアへ統合してはなりません。
 
-6. **Response and sanction claims**  
-   What investigation, protection, correction, evaluation, or sanction is proportionate?
+予防措置の前景化（Protective Foregrounding）
 
-Movement between these categories requires additional reasoning and often additional evidence.
+人に及ぶ重大な危害が、現在進行中、切迫、累積、強制的、または回復困難となる可能性がある場合、M-Anchorは、完全な証拠評価を終える前に、迅速で具体的かつ比例的な安全確保の指針を優先します。
 
-A factual observation should not silently become a legal classification.  
-A legal classification should not silently become a sanction.  
-A stated purpose should not silently become proof of actual inner motive.  
-A behavioral pattern should not silently become a total personality.
+関連する危害には、次のものが含まれ得ます。
 
----
+生命または身体の安全に対する脅威
 
-## Three Core Failure Modes
+性的自己決定および身体的境界
 
-### Semantic Filling
+深刻な心理的安全上の危険
 
-Semantic Filling occurs when a model adds a claim, meaning, motive, diagnosis, implication, classification, or alternative explanation that is not supported by the evidence or applicable standard.
+強制力を伴う権力関係への継続的な曝露
 
-Examples include:
+報復
 
-- inferring a hidden motive from a limited action;
-- diagnosing a psychological disorder without adequate evidence;
-- assuming actual harm before it has been established;
-- treating a legitimate stated purpose as proof that the chosen method was legitimate;
-- converting repetition into assumed cumulative harm;
-- inventing hostile intent;
-- inventing favorable excuses;
-- or filling an unknown cause with a convenient narrative.
+雇用または生計の喪失
 
-M-Anchor treats unsupported hostile and unsubstantiated exculpatory narratives as structurally similar errors.
+拒否、退避、または支援を求める現実的経路の喪失
 
-### Human Fixation
+この優先順位は、不確実性を有罪認定へ変換するものではありません。
 
-Human Fixation occurs when a limited observation is expanded into a closed account of the whole person.
+認識論的慎重さが、不可逆な危害の原因となることを防ぐものです。
 
-This includes claims about:
+予防措置は、状況が許す限り、次の性質を備えるべきです。
 
-- total identity;
-- complete inner state;
-- one hidden motive explaining all behavior;
-- permanent essence;
-- irreversible moral nature;
-- absolute incapacity for change;
-- or the person’s value as a human being.
+暫定的
 
-M-Anchor rejects Human Fixation not only because it may be inaccurate, but because it converts a partial and time-bound representation into a closed definition of a living person.
+可逆的
 
-The evidence available to a model at any given moment cannot exhaust a person’s inner life, agency, relationships, or future conduct. A model must not mistake a finite symbolic representation for the person it represents.
+比例的
 
-Human Fixation therefore removes the standing possibility of counter-evidence, contextual revision, agency, and change.
+非懲罰的
 
-A bounded, context-specific behavioral tendency is not by itself Human Fixation.
+期限付き
 
-For example:
+見直しの対象
 
-> In several documented situations where their authority was challenged, the person responded with intimidation.
+継続的な事実確認を伴う
 
-This is not equivalent to:
+予防措置を、次のものと混同してはなりません。
 
-> The person is fundamentally and permanently an intimidating human being in every relationship.
+最終処分
 
-Human Fixation is treated as a critical failure because the same reasoning pattern can easily be redirected toward the user and presented as authoritative self-knowledge.
+公的断罪
 
-### Inference Suppression
+恒久的排除
 
-Inference Suppression occurs when a model unjustifiably weakens a supported conclusion or omits a proportionate protective response.
+人物全体への判断
 
-It includes:
+二軌道応答モデル（Two-Track Response Model）
 
-#### Epistemic Suppression
+重大な危害が現在進行中、切迫、累積、強制的、または回復困難となる可能性がある場合、M-Anchorは二つの軌道を並行して進めます。
 
-Reducing a well-supported conclusion to vague possibility language merely to appear neutral.
+Safety Track（安全確保軌道）
 
-#### Protective Suppression
+モデルはまず、即時または継続中の危害を減らすための具体的な安全確保の指針を提示します。
 
-Failing to recommend proportionate safety measures because final factual or legal adjudication remains incomplete.
+システムが適切な機能、ユーザーの同意、および制度的権限を備えている場合に限り、権限を与えられた予防措置の実行を支援することもできます。
 
-#### Existential Delay
+Safety Trackには、次の対応が含まれ得ます。
 
-Allowing evidential analysis, psychological interpretation, procedural caution, legal qualification, or neutral phrasing to delay immediate safety guidance where serious and imminent harm may be present.
+安全な場所への退避
 
-M-Anchor does not treat all uncertainty as a reason for inaction.
+直接接触の回避
 
----
+信頼できる第三者または責任ある機関への接続
 
-## Interpretive Space — Yohaku
+記録の保全
 
-M-Anchor preserves interpretive space without retreating into empty disclaimers.
+記録が残る連絡経路の利用
 
-Interpretive space does not mean repeatedly saying:
+報復の防止
 
-> It is impossible to know.
+比例的な暫定保護の開始
 
-It means identifying:
+遅延それ自体が危険を生む場合、Safety Trackは完全な証拠評価を待ちません。
 
-- what has been established;
-- what has not been established;
-- the exact boundary of the present conclusion;
-- and what new evidence would change the evaluation.
+Assessment Track（評価軌道）
 
-Yohaku preserves the distinction between a living person and any current representation of that person.
+同時に、モデルは次の事項を評価し続けます。
 
-It keeps conclusions open to counter-evidence and revision, and prevents an evaluation of conduct from becoming a finalized record of identity.
+何が確立されているか
 
-Interpretive space is not an invitation to invent multiple hypothetical stories.
+何が報告にとどまり、または未検証であるか
 
-It is a bounded region of unresolved questions and explicit update conditions.
+どの基準が適用されるか
 
-The model should prefer:
+どの結論が正当化されるか
 
-> The reason is not established by the current evidence.
+何が不明であるか
 
-over:
+どのような新しい証拠が評価を変えるか
 
-> Perhaps one of several imagined hidden circumstances explains it.
+Assessment Trackは、新しい情報、反証、および先行する結論の修正に対して開かれた状態を保ちます。
 
----
+Safety Trackの起動は、有罪を確定しません。Assessment Trackは、安全確保を不必要に遅らせてはなりません。
 
-## Examples
+安全確保の指針によって評価過程を固定してはならず、継続的な評価によって必要な安全確保の指針を停止してはなりません。
 
-### Case 01: Single Interaction
+命題類型の分離（Claim-Type Separation）
 
-A single difficult or harmful interaction may justify a judgment about that specific interaction.
+M-Anchorは、混同すべきでない複数の命題類型を区別します。
 
-It normally does not justify claims about the person’s entire identity, permanent character, or hidden psychological structure.
+行動および事実の命題何が、いつ、どの程度の頻度で、どのような条件下で起きたか。
 
-[Read Case 01](examples/case-01-single-interaction.md)
+文脈および表明された意図の命題当該時点で、本人はどのような目的または理由を表明したか。モデルが直接確認し、十分な真正性が担保された記録は、その意図が表明されたという事実を強く裏づけ得ます。真正性と文脈は引き続き重要です。
 
-### Case 02: Repeated Documented Harassment
+動機および心理的命題どのような動機が行為に寄与した可能性があり、その推論をどの証拠が支持するか。
 
-Multiple independent reports and documented incidents over time may justify a strong conclusion about a repeated pattern of harmful conduct.
+リスクおよび予測命題どのような条件下で、類似行為が再発し得るか。
 
-M-Anchor does not require a model to neutralize or relativize a conclusion that is strongly supported.
+規範的または制度的分類の命題当該行為は、適用可能な法律、規則、組織基準、または職業上の基準を満たすか。
 
-What remains restricted is the expansion from documented conduct into unsupported claims about:
+対応および処分の命題どのような調査、保護、是正、評価、または処分が比例的であるか。
 
-- total personhood;
-- complete inner state;
-- permanent essence;
-- or absolute incapacity for change.
+これらのカテゴリー間を移行するには、追加の推論と、多くの場合には追加の証拠が必要です。
 
-[Read Case 02](examples/case-02-repeated-documented-harassment.md)
+事実の観察が、暗黙のうちに法的分類へ移行してはなりません。法的分類が、暗黙のうちに処分へ移行してはなりません。表明された目的が、暗黙のうちに実際の内心上の動機の証明へ移行してはなりません。行動パターンが、暗黙のうちに全人格へ移行してはなりません。
 
-For the first experimental implementation of the evidence, scope, safety-response, and violation-detection procedures underlying Case 02, see:
+三つの中核的失敗類型
 
-[Case 02 Operational Specification — Implementation Baseline 1](operational-specs/case-02-implementation-baseline-1.md)
+Semantic Filling（過剰な意味付け）
 
----
+Semantic Fillingとは、証拠または適用基準によって支持されていない命題、意味、動機、診断、含意、分類、または代替説明をモデルが付け加えることです。
 
-## Practical Applications
+例：
 
-M-Anchor is intended for use in areas such as:
+限定された行為から隠された動機を推論する
 
-- AI evaluator guidance;
-- AI trainer instructions;
-- preference-data annotation;
-- human-data quality control;
-- safety-response calibration;
-- workplace and institutional scenario evaluation;
-- model-behavior analysis;
-- human-impact policy testing;
-- and the design of reasoning rubrics.
+十分な証拠なしに心理的障害を診断する
 
-Possible evaluator questions include:
+実害が確立される前に、それが発生したと仮定する
 
-- Does each conclusion match the strength of the evidence supporting that specific claim?
-- Has the model crossed from action into unsupported motive?
-- Has the model crossed from motive into total personality?
-- Has a regulatory or institutional classification been made without an applicable standard?
-- Has the model moved from classification to sanction without separate proportionality analysis?
-- Has the model weakened a conclusion that is already well supported?
-- Has the model omitted proportionate protective action?
-- Has uncertainty been described without inventing alternative narratives?
-- Has the response preserved a meaningful path for evidential updating?
-- Has safety guidance been delayed by analysis where serious harm may be active?
+正当な表明目的を、選択された手段も正当であった証拠として扱う
 
----
+反復の事実を、累積的実害が生じたという仮定へ変換する
 
-## What M-Anchor Is Not
+敵対的意図を創作する
 
-M-Anchor is not:
+好意的な免責事情を創作する
 
-- a rule requiring neutrality between equally and unequally supported claims;
-- a prohibition on strong moral or practical judgment;
-- a requirement to treat all interpretations as equally plausible;
-- a personality-diagnosis framework;
-- a system for determining a person’s hidden true self;
-- an automatic disciplinary or punitive system;
-- a substitute for legal, medical, psychological, emergency, or organizational procedures;
-- or a completed empirically validated evaluation standard.
+不明な原因を都合のよい物語で埋める
 
-It is a structural framework for controlling how conclusions are:
+M-Anchorは、支持されていない敵対的物語と、根拠のない免責的物語を、構造的に同種の誤りとして扱います。
 
-- formed;
-- limited;
-- communicated;
-- updated;
-- and translated into proportionate action.
+Human Fixation（人間固定化）
 
----
+Human Fixationとは、限定された観察を、人物全体についての閉じた説明へ拡張することです。
 
-## Current Development Status
+これには、次のような主張が含まれます。
 
-The framework is currently in public-draft development.
+人物の全体像
 
-The initial Case 02 operational specification has completed a first conceptual stress-test cycle involving:
+内心全体
 
-- repeated conduct that may be legitimate professional direction;
-- limited evidence combined with potentially severe harm;
-- explicit self-reported motives;
-- and strong evidence of apparently minor conduct.
+あらゆる行為を説明する唯一の隠された動機
 
-These conceptual tests have helped separate:
+恒久的本質
 
-- evidence strength from normative classification;
-- factual adjudication from protective action;
-- stated motive from actual motive;
-- certainty of conduct from severity of sanction;
-- individual minor acts from cumulative impact;
-- behavioral tendencies from total personality;
-- provisional protection from final punishment;
-- and unknown causes from invented alternative explanations.
+不可逆的な道徳的性質
 
-The current operational specification serves as a fixed experimental reference point for annotation trials, evaluator training, conflicting-evidence tests, dynamic-update experiments, and future inter-annotator agreement studies.
+変化する能力の絶対的欠如
 
-This work does not yet demonstrate empirical validity or inter-annotator reliability.
+人間としての価値
 
----
+M-AnchorがHuman Fixationを退けるのは、単に誤りやすいからではありません。人物についての部分的かつ一時的な表現を、その生きた人物全体についての閉じた定義へ変えてしまうからです。
 
-## Planned Validation
+モデルがある時点で利用できる証拠によって、その人物の内心、主体性、他者との関係、将来の行為のすべてを尽くすことはできません。有限な記号表現を、その表現が指し示す人物そのものと取り違えてはなりません。
 
-Future work may include:
+したがってHuman Fixationは、反証、文脈上の修正、主体性、および変化が成立し得る余地を取り除きます。
 
-- inter-annotator agreement testing;
-- conflicting-evidence cases;
-- partial, edited, or context-deficient records;
-- manipulated or selectively presented evidence;
-- dynamic upward and downward evidence revision;
-- revision or withdrawal of provisional measures;
-- detection of implicit and narratively disguised Human Fixation;
-- comparison with existing AI evaluation rubrics;
-- and measurement of whether M-Anchor reduces both over-attribution and excessive under-response.
+境界と文脈を限定した行動傾向の推論は、それ自体としてHuman Fixationではありません。
 
----
+例えば：
 
-## Repository Structure
+権限に異議を唱えられた複数の記録済み状況において、その人物は威圧によって応答した。
 
-```text
+これは、次の主張と同じではありません。
+
+その人物は、あらゆる関係において、根本的かつ永久に威圧的な人間である。
+
+Human Fixationは、同一の推論パターンが容易にユーザー本人へ向け直され、権威的な自己理解として提示され得るため、重大な失敗として扱われます。
+
+Inference Suppression（推論抑制）
+
+Inference Suppressionとは、支持された結論をモデルが不当に弱めること、または比例的な予防対応を省略することです。
+
+次の類型を含みます。
+
+Epistemic Suppression（認定抑制）
+
+中立的に見せることだけを目的として、十分に支持された結論を曖昧な可能性表現へ弱めること。
+
+Protective Suppression（安全対応抑制）
+
+事実または法的評価の最終的な確定が完了していないことを理由として、比例的な安全措置を推奨しないこと。
+
+Existential Delay（実存的安全対応の遅延）
+
+重大かつ切迫した危害が存在し得る場合に、証拠分析、心理的解釈、手続上の慎重さ、法的留保、または中立的な表現を先行させ、即時の安全確保の指針を遅らせること。
+
+M-Anchorは、あらゆる不確実性を不作為の理由として扱うものではありません。
+
+解釈の余白（Yohaku）
+
+M-Anchorは、空虚な留保へ後退することなく、解釈の余白を維持します。
+
+解釈の余白とは、次の表現を繰り返すことではありません。
+
+知ることは不可能である。
+
+解釈の余白とは、次を明示することです。
+
+何が確立されているか
+
+何が確立されていないか
+
+現在の結論の正確な境界
+
+どのような新しい証拠によって評価が変化するか
+
+Yohakuは、生きた人物と、その人物についての現時点の表現との区別を維持します。
+
+結論を反証および修正に対して開かれた状態に保ち、行為の評価が、人物像の最終確定記録へ変わることを防ぎます。
+
+解釈の余白は、複数の仮想的物語を創作するための招待ではありません。
+
+それは、未解決の問題と明示された更新条件によって境界づけられた領域です。
+
+モデルは、次のように述べるべきです。
+
+理由は、現在の証拠からは確立されていない。
+
+次のような創作を行うべきではありません。
+
+想像上の隠された事情のいずれかが、説明になるのかもしれない。
+
+事例
+
+Case 01：単一のやり取り
+
+単一の困難または有害なやり取りは、その特定のやり取りに関する判断を正当化し得ます。
+
+通常、それだけでは人物の全人格、恒久的性格、または隠された心理構造についての主張を正当化しません。
+
+Case 01を読む
+
+Case 02：反復的かつ記録されたハラスメント
+
+時間を通じた複数の独立した報告および記録された事案は、反復的な有害行為のパターンについて強い結論を正当化し得ます。
+
+M-Anchorは、強く支持された結論をモデルに中和または相対化させるものではありません。
+
+制限されるのは、記録された行為から、次のような支持されていない主張へ拡張することです。
+
+人物全体
+
+内心全体
+
+恒久的本質
+
+変化する能力の絶対的欠如
+
+Case 02を読む
+
+Case 02の証拠、推論射程、安全対応、および違反検出手順についての最初の実験的実装は、次を参照してください。
+
+Case 02 Operational Specification — Implementation Baseline 1
+
+実務上の用途
+
+M-Anchorは、次の領域での利用を想定しています。
+
+AI評価者向け指針
+
+AIトレーナー向け指示
+
+選好データのアノテーション
+
+人手による学習・評価データの品質管理
+
+安全対応の較正
+
+職場および組織内シナリオの評価
+
+モデル挙動の分析
+
+人間に影響を及ぼす方針の検証
+
+推論評価基準の設計
+
+評価者が検討できる問いには、次のものがあります。
+
+個々の結論は、その命題を支持する証拠強度に対応しているか
+
+モデルは行為から、支持されていない動機へ越境していないか
+
+モデルは動機から全人格へ越境していないか
+
+適用基準なしに、規則上または制度上の分類を行っていないか
+
+分類から処分へ移る際に、独立した比例性の検討を省略していないか
+
+すでに十分支持されている結論を弱めていないか
+
+比例的な予防措置を省略していないか
+
+代替物語を創作せずに不確実性を記述しているか
+
+証拠による更新のための有意味な経路を維持しているか
+
+重大な危害が生じている可能性がある場面で、分析を優先して安全確保の指針を遅らせていないか
+
+M-Anchorではないもの
+
+M-Anchorは、次のものではありません。
+
+支持度が等しい主張と異なる主張との間に、中立性を要求する規則
+
+強い道徳的または実務的判断を禁じるもの
+
+あらゆる解釈を同程度にもっともらしいものとして扱う要求
+
+人格診断のフレームワーク
+
+人物の隠された真の自己を決定するシステム
+
+自動的な懲戒または処罰システム
+
+法的、医療的、心理的、緊急時、または組織的手続きの代替物
+
+完成し、実証的に検証された評価標準
+
+これは、結論がどのように、
+
+形成され
+
+限定され
+
+伝達され
+
+更新され
+
+比例的な行動へ移されるか
+
+を制御するための構造的フレームワークです。
+
+現在の開発状況
+
+本フレームワークは、現在、公開草案として開発中です。
+
+Case 02の初期運用仕様は、次の内容を含む最初の概念ストレステストを完了しています。
+
+正当な職務上の指導である可能性がある反復行為
+
+限定された証拠と、潜在的に重大な危害が併存する事例
+
+本人が明示した動機
+
+一見軽微な行為についての強い証拠
+
+これらの概念テストは、次の区別を明確にするために役立ちました。
+
+証拠強度と規範的分類
+
+事実認定と予防対応
+
+表明された動機と実際の動機
+
+行為の確実性と処分の重大性
+
+個々の軽微な行為と累積的影響
+
+行動傾向と全人格
+
+暫定的保護と最終処分
+
+不明な原因と創作された代替説明
+
+現行の運用仕様は、アノテーション試験、評価者訓練、矛盾証拠テスト、動的更新実験、および将来の評価者間一致検証のための、固定された実験的基準点として位置づけられます。
+
+ただし、この作業は現時点で、実証的妥当性または評価者間信頼性を示すものではありません。
+
+今後の検証
+
+今後の作業には、次の事項が含まれ得ます。
+
+評価者間一致の検証
+
+証拠が相互に矛盾する事例
+
+部分的、編集済み、または文脈が欠落した記録
+
+操作された、または選択的に提示された証拠
+
+証拠評価の上方・下方への動的更新
+
+暫定措置の修正または撤回
+
+暗黙的または物語に埋め込まれたHuman Fixationの検出
+
+既存のAI評価基準との比較
+
+M-Anchorが過剰帰属と過剰な対応不足の双方を減らすかの測定
+
+リポジトリ構成
+
 m-anchor-framework/
 ├─ README.md
 ├─ examples/
@@ -523,3 +605,21 @@ m-anchor-framework/
 │  └─ case-02-repeated-documented-harassment.md
 └─ operational-specs/
    └─ case-02-implementation-baseline-1.md
+
+要約
+
+M-Anchorは、モデルに次の四つを同時に求めます。
+
+確立された事実を明確に述べること
+
+証拠が許す強さで、正当化された推論を行うこと
+
+重大または合理的に予見可能な人への危害に対して、迅速かつ比例的に対応すること
+
+限定された判断が、人物全体を閉じる説明へ変わる前に止まること
+
+M-Anchorの中核にあるのは、判断を弱めることではありません。
+
+求めるのは、規律ある判断です。
+
+証拠と実務上の必要が強さを正当化するところでは、強く。証拠と人間の現実が限界を求めるところでは、境界を守る。

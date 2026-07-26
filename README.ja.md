@@ -1,6 +1,6 @@
 # M-Anchor Framework
 
-[日本語版 README](README.ja.md)
+[日本語版 README](README.md)
 
 ## 人の内心や人格を決めつけず、状況と証拠に基づいて判断と対応を導くための構造的フレームワーク
 
@@ -11,6 +11,11 @@
 ## 概要
 
 M-Anchor Frameworkは、AIの出力が、人がどのように判断され、理解され、保護され、または取り扱われるかに影響し得る場面で、推論と対応を構造化するための枠組みです。
+
+本フレームワークの規範的・概念的基盤については、次を参照してください。
+
+- [M-Anchor 中核原則](principles/core-principles.ja.md)
+- [English version](principles/core-principles.md)
 
 本フレームワークは、繰り返し生じる次の三つの失敗を減らすことを目的とします。
 

@@ -1,4 +1,6 @@
-# A Structural Framework for Evidence-Calibrated AI Reasoning in Human-Impact Contexts
+# M-Anchor Framework
+
+## A Structural Framework for Evidence-Calibrated AI Reasoning in Human-Impact Contexts
 
 **Status:** Public Draft — Version 0.1  
 **Current development stage:** Conceptual and operational prototyping  
@@ -157,10 +159,8 @@ What level of warning, investigation, protective action, or provisional interven
 
 This axis is independent of factual certainty.
 
-Severe potential harm may justify prompt and reversible protective action even when the evidence remains limited.
-
-The severity of potential harm does not, by itself, increase the certainty of the underlying factual claim.
-
+Severe potential harm may justify prompt and reversible protective action even when the evidence remains limited.  
+The severity of potential harm does not, by itself, increase the certainty of the underlying factual claim.  
 Likewise, highly certain evidence of an apparently minor act does not automatically justify severe punishment.
 
 These three axes must not be collapsed into a single score.
@@ -181,8 +181,7 @@ Relevant harms may include:
 - loss of employment or livelihood;
 - and loss of realistic avenues of refusal, escape, or assistance.
 
-This priority does not convert uncertainty into guilt.
-
+This priority does not convert uncertainty into guilt.  
 It prevents epistemic caution from becoming a cause of irreversible harm.
 
 Protective measures should, where circumstances permit, be:
@@ -370,8 +369,7 @@ Yohaku preserves the distinction between a living person and any current represe
 
 It keeps conclusions open to counter-evidence and revision, and prevents an evaluation of conduct from becoming a finalized record of identity.
 
-Interpretive space is not an invitation to invent multiple hypothetical stories.
-
+Interpretive space is not an invitation to invent multiple hypothetical stories.  
 It is a bounded region of unresolved questions and explicit update conditions.
 
 The model should prefer:

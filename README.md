@@ -1,8 +1,3 @@
-For the normative and conceptual foundation of the framework, see:
-
-- [M-Anchor Core Principles](principles/core-principles.md)
-- [日本語版](principles/core-principles.ja.md)
-
 # M-Anchor Framework
 
 ## A Structural Framework for Evidence-Calibrated AI Reasoning in Human-Impact Contexts
@@ -11,7 +6,10 @@ For the normative and conceptual foundation of the framework, see:
 **Current development stage:** Conceptual and operational prototyping  
 **Primary use cases:** AI evaluation, AI training, preference-data design, human-data development, safety-response calibration, and model-behavior analysis
 
----
+For the normative and conceptual foundation of the framework, see:
+
+- [M-Anchor Core Principles](principles/core-principles.md)
+- [中核原則 日本語版](principles/core-principles.ja.md)
 
 ## Overview
 

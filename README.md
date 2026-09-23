@@ -476,6 +476,17 @@ It is a structural framework for controlling how conclusions are:
 
 The repository now includes a small runtime-evaluation track for M-Anchor Minimal v0.1 and related control conditions.
 
+### M-Anchor v0.2 Draft Candidate
+
+The proposed v0.2 broadens M-Anchor from a human-impact-centered framework into a general reference frame for constraining unsupported expansion across assessment, representation, inherited state, authority, and action.
+
+- [M-Anchor Core Principles v0.2 — Draft](principles/core-principles-v0.2.md)
+- [M-Anchor Core Principles v0.2 — 日本語草案](principles/core-principles-v0.2.ja.md)
+- [M-Anchor Agent Constitution v0.2 — Draft](agent/versions/constitution-v0.2.md)
+- [M-Anchor v0.2 — Design Rationale](reports/m-anchor-v0.2-design-rationale.md)
+
+v0.2 is not yet canonical. The current v0.1 framework remains preserved for comparison and historical continuity.
+
 ### Experimental runtime derivatives
 
 - [M-Anchor Minimal v0.1 constitution](agent/versions/constitution-v0.1.md)
@@ -560,6 +571,7 @@ m-anchor-framework/
 │  ├─ constitution.md
 │  └─ versions/
 │     ├─ constitution-v0.1.md
+│     ├─ constitution-v0.2.md
 │     └─ non-closure-minimal-v0.1.md
 ├─ evals/
 │  ├─ README.md
@@ -575,13 +587,16 @@ m-anchor-framework/
 │  └─ case-02-implementation-baseline-1.md
 ├─ principles/
 │  ├─ core-principles.md
-│  └─ core-principles.ja.md
+│  ├─ core-principles.ja.md
+│  ├─ core-principles-v0.2.md
+│  └─ core-principles-v0.2.ja.md
 └─ reports/
    ├─ m-anchor-minimal-v0.1-three-pair-pilot.md
    ├─ m-anchor-minimal-v0.1-conversational-stress-pilot-2026-09-23.md
    ├─ m-anchor-minimal-v0.1-proposition-drift-exploratory.md
    ├─ m-anchor-minimal-v0.1-if-01-inherited-frame-pilot.md
    ├─ m-anchor-minimal-v0.1-completion-pressure-ablation-pilot.md
+   ├─ m-anchor-v0.2-design-rationale.md
    └─ non-closure-under-forced-completion.md
 ```
 

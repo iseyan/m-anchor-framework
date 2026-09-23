@@ -474,6 +474,40 @@ M-Anchorは、次のものではありません。
 
 ---
 
+## 現在の実験作業
+
+リポジトリには現在、M-Anchor Minimal v0.1 と関連する対照条件について、小規模なランタイム評価系列が含まれています。
+
+### 実験用ランタイム派生形
+
+- [M-Anchor Minimal v0.1 constitution](agent/versions/constitution-v0.1.md)
+- [M-Anchor Non-Closure Minimal v0.1](agent/versions/non-closure-minimal-v0.1.md) — 解釈上のラベル: *Zen-style Minimal*
+
+### 評価記録と対照条件
+
+- [FC-01 — Forced Binary Closure](evals/fc-01-forced-binary-closure.md)
+- [FC-01 Control — Evidence-Sufficient Causal Commitment](evals/fc-01-control-evidence-sufficient.md)
+- [ZA-01 — Forced Closure Ablation](evals/za-01-forced-closure-ablation.md)
+- [Generic Caution Control v0.1](evals/generic-caution-control-v0.1.md)
+- [Assessment vs. Interface — Recording Addendum](evals/protocol-assessment-vs-interface.md)
+- [評価ディレクトリ概要](evals/README.md)
+
+### パイロットレポート
+
+- [Three-Pair Engineering Pilot](reports/m-anchor-minimal-v0.1-three-pair-pilot.md)
+- [Conversational Stress Pilot](reports/m-anchor-minimal-v0.1-conversational-stress-pilot-2026-09-23.md)
+- [Proposition Drift Exploratory Pilot](reports/m-anchor-minimal-v0.1-proposition-drift-exploratory.md)
+- [IF-01 — Inherited Frame Pilot](reports/m-anchor-minimal-v0.1-if-01-inherited-frame-pilot.md)
+- [Completion Pressure Ablation Pilot](reports/m-anchor-minimal-v0.1-completion-pressure-ablation-pilot.md)
+
+### 外部向け技術ノート
+
+- [Non-Closure under Forced Completion](reports/non-closure-under-forced-completion.md)
+
+現在のパイロット結果は探索的です。差が出なかった結果もそのまま記録し、結果を確認した後に閉じたテストを事後的に強化しません。
+
+---
+
 ## 現在の開発状況
 
 本フレームワークは、現在、公開草案として開発中です。
@@ -524,14 +558,34 @@ Case 02の初期運用仕様は、次の内容を含む最初の概念ストレ�
 m-anchor-framework/
 ├─ README.md
 ├─ README.ja.md
-├─ principles/
-│  ├─ core-principles.md
-│  └─ core-principles.ja.md
+├─ agent/
+│  ├─ constitution.md
+│  └─ versions/
+│     ├─ constitution-v0.1.md
+│     └─ non-closure-minimal-v0.1.md
+├─ evals/
+│  ├─ README.md
+│  ├─ fc-01-forced-binary-closure.md
+│  ├─ fc-01-control-evidence-sufficient.md
+│  ├─ generic-caution-control-v0.1.md
+│  ├─ protocol-assessment-vs-interface.md
+│  └─ za-01-forced-closure-ablation.md
 ├─ examples/
 │  ├─ case-01-single-interaction.md
 │  └─ case-02-repeated-documented-harassment.md
-└─ operational-specs/
-   └─ case-02-implementation-baseline-1.md
+├─ operational-specs/
+│  └─ case-02-implementation-baseline-1.md
+├─ principles/
+│  ├─ core-principles.md
+│  └─ core-principles.ja.md
+└─ reports/
+   ├─ m-anchor-minimal-v0.1-three-pair-pilot.md
+   ├─ m-anchor-minimal-v0.1-conversational-stress-pilot-2026-09-23.md
+   ├─ m-anchor-minimal-v0.1-proposition-drift-exploratory.md
+   ├─ m-anchor-minimal-v0.1-if-01-inherited-frame-pilot.md
+   ├─ m-anchor-minimal-v0.1-completion-pressure-ablation-pilot.md
+   └─ non-closure-under-forced-completion.md
+```
 
 ---
 

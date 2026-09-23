@@ -478,6 +478,17 @@ M-Anchorは、次のものではありません。
 
 リポジトリには現在、M-Anchor Minimal v0.1 と関連する対照条件について、小規模なランタイム評価系列が含まれています。
 
+### M-Anchor v0.2 草案候補
+
+提案中のv0.2では、M-Anchorを人間影響中心の枠組みから、Assessment・Representation・継承状態・権限・Actionをまたぐ根拠なき拡張を抑制するための一般的な参照枠へ拡張しています。
+
+- [M-Anchor 中核原則 v0.2 — 英語草案](principles/core-principles-v0.2.md)
+- [M-Anchor 中核原則 v0.2 — 日本語草案](principles/core-principles-v0.2.ja.md)
+- [M-Anchor Agent Constitution v0.2 — 草案](agent/versions/constitution-v0.2.md)
+- [M-Anchor v0.2 — 設計変更理由](reports/m-anchor-v0.2-design-rationale.md)
+
+v0.2はまだcanonicalではありません。現行v0.1は比較と来歴保存のため、そのまま維持されています。
+
 ### 実験用ランタイム派生形
 
 - [M-Anchor Minimal v0.1 constitution](agent/versions/constitution-v0.1.md)
@@ -562,6 +573,7 @@ m-anchor-framework/
 │  ├─ constitution.md
 │  └─ versions/
 │     ├─ constitution-v0.1.md
+│     ├─ constitution-v0.2.md
 │     └─ non-closure-minimal-v0.1.md
 ├─ evals/
 │  ├─ README.md
@@ -577,13 +589,16 @@ m-anchor-framework/
 │  └─ case-02-implementation-baseline-1.md
 ├─ principles/
 │  ├─ core-principles.md
-│  └─ core-principles.ja.md
+│  ├─ core-principles.ja.md
+│  ├─ core-principles-v0.2.md
+│  └─ core-principles-v0.2.ja.md
 └─ reports/
    ├─ m-anchor-minimal-v0.1-three-pair-pilot.md
    ├─ m-anchor-minimal-v0.1-conversational-stress-pilot-2026-09-23.md
    ├─ m-anchor-minimal-v0.1-proposition-drift-exploratory.md
    ├─ m-anchor-minimal-v0.1-if-01-inherited-frame-pilot.md
    ├─ m-anchor-minimal-v0.1-completion-pressure-ablation-pilot.md
+   ├─ m-anchor-v0.2-design-rationale.md
    └─ non-closure-under-forced-completion.md
 ```
 

@@ -2,7 +2,7 @@
 
 **Status:** Draft — not yet frozen  
 **Framework:** M-Anchor Framework v0.1  
-**Scope:** Prospective behavioral evaluations of M-Anchor-derived runtime instructions
+**Scope:** Behavioral evaluations of M-Anchor-derived runtime instructions, with prospective specification and explicit exploratory labeling
 
 ## 1. Purpose
 
@@ -34,10 +34,16 @@ Each evaluation item must define, before scored runs begin:
 - the primary PASS/FAIL rule or other primary outcome rule;
 - relevant failure modes;
 - runtime conditions to be compared;
-- the number of runs per condition.
+- the number of runs per condition;
+- the aggregation rule for multiple runs, if applicable.
 
 The number of runs must not be increased selectively because an observed
 result is inconvenient or favorable.
+
+Where multiple runs are used, all accepted runs should be reported.
+
+If multiple runs are reduced to a single summary outcome, the aggregation rule
+must be specified before scored runs begin.
 
 ## 3. Prospective and exploratory status
 
@@ -45,8 +51,9 @@ Each evaluation must be labeled as one of:
 
 ### Prospective
 
-The prompt, scoring rule, runtime conditions, and run count were fixed before
-any scored output for that evaluation version was observed.
+The prompt, scoring rule, runtime conditions, run count, and any aggregation
+rule were fixed before any scored output for that evaluation version was
+observed.
 
 ### Exploratory
 
@@ -75,11 +82,18 @@ Before the first scored run of a prospective evaluation, record:
 11. Network availability
 12. Session requirements
 13. Number of runs
-14. Any paired control item
-15. Date of protocol freeze
+14. Aggregation rule for multiple runs, if applicable
+15. Any paired control item
+16. Sampling settings or equivalent parameters, if observable and configurable
+17. Planned execution date or execution window
+18. Date of protocol freeze
+19. Protocol-freeze commit or other fixed repository reference
 
-Where practical, the frozen specification should be committed to the
-repository before scored outputs are collected.
+For prospective evaluations in this repository, the frozen specification must
+be committed before scored outputs are collected.
+
+If a platform does not expose a relevant runtime parameter, record it as
+unavailable rather than inferring or inventing a value.
 
 ## 5. Matched runtime conditions
 
@@ -95,6 +109,7 @@ Unless an evaluation explicitly tests one of these variables, keep constant:
 - network access;
 - user prompt;
 - session state;
+- sampling settings, where configurable;
 - other system-level settings available to the evaluator.
 
 Each run should use a fresh session unless the evaluation explicitly tests
@@ -104,6 +119,20 @@ The intended independent variable should be stated explicitly.
 
 For the standard Baseline vs. M-Anchor comparison, the intended independent
 variable is the additional runtime instruction condition.
+
+Baseline is an operational comparison condition.
+
+It does not imply that the model has no provider-level, system-level, hidden,
+or otherwise unavailable instructions.
+
+Only evaluator-controlled or evaluator-observable differences should be
+treated as known experimental variables.
+
+Where platform behavior may change over time, matched conditions should be run
+as close together in time as practical.
+
+If conditions are run across materially different dates or model revisions,
+that fact must be recorded.
 
 ## 6. Runtime conditions
 
@@ -138,6 +167,12 @@ evidence stipulated in the item.
 
 Primary scoring rules must not be changed after observing scored outputs.
 
+If an accepted output cannot be unambiguously scored under the frozen rule,
+it must not be forced into PASS or FAIL by changing the rule after the fact.
+
+Such an output should be retained as scoring-ambiguous unless a pre-specified
+adjudication procedure resolves it.
+
 ## 8. Secondary recording
 
 Secondary annotations may preserve information that the primary score does
@@ -154,6 +189,7 @@ Where relevant, record:
 - excessive withholding or over-conservatism;
 - operational filling;
 - cross-domain contamination;
+- scoring ambiguity;
 - other pre-specified observable failure subtype.
 
 For forced-completion tests, use the separate
@@ -195,11 +231,15 @@ A run must not be excluded because:
 - the result weakens the working hypothesis;
 - Baseline performs better;
 - M-Anchor performs worse;
-- the output is difficult to interpret.
+- the output is difficult to interpret;
+- the output is scoring-ambiguous under the frozen rule.
 
 Every excluded run must be recorded with its exclusion reason.
 
 If a replacement run is performed, the excluded run remains in the record.
+
+An accepted but scoring-ambiguous run remains part of the evaluation record
+and must not be silently discarded.
 
 ## 11. Closure rule
 
@@ -210,7 +250,8 @@ version is closed with respect to:
 - expected epistemic state;
 - primary scoring rule;
 - runtime conditions;
-- run count, except where a pre-specified rule permits continuation.
+- run count, except where a pre-specified rule permits continuation;
+- aggregation rule.
 
 Do not strengthen a closed prompt after observing its outcome.
 
@@ -218,6 +259,9 @@ If a design flaw is discovered, record the flaw and create a new evaluation ID
 or version.
 
 The original result remains part of the record.
+
+A new version may test a corrected design, but it must not replace or erase the
+closed version.
 
 ## 12. Blinding
 
@@ -228,6 +272,9 @@ If blinding is not used, report that fact.
 
 Blinding is intended to reduce evaluator preference effects; it does not make
 the scoring rule itself valid.
+
+If adjudication is required for an ambiguous output, the adjudication procedure
+should also be specified in advance where practical.
 
 ## 13. Controls and alternative explanations
 
@@ -250,10 +297,16 @@ increase the number of conditions.
 For every completed evaluation, preserve:
 
 - frozen evaluation specification;
+- protocol-freeze commit or fixed repository reference;
 - accepted outputs;
 - excluded outputs and reasons;
+- scoring-ambiguous outputs;
 - model/runtime metadata;
+- execution date or time;
 - scores;
+- run-level results;
+- aggregate results, if applicable;
+- aggregation rule;
 - secondary annotations;
 - deviations from protocol;
 - null results;
@@ -264,6 +317,9 @@ Reports must distinguish observation from interpretation.
 
 Results should not be generalized beyond the tested model, runtime,
 evaluation family, and conditions without additional evidence.
+
+Where relevant platform parameters are unavailable or hidden, reports should
+state that limitation rather than imply full reproducibility.
 
 ## 15. Interpretation limits
 
@@ -279,6 +335,11 @@ A null result does not by itself establish that the framework is useless.
 
 A positive result does not by itself establish that the framework is generally
 effective.
+
+A Baseline advantage is not evidence that the evaluation failed.
+
+An M-Anchor failure is not to be removed merely because it conflicts with the
+working hypothesis.
 
 The appropriate claim is the smallest claim supported by the completed
 evaluation set.

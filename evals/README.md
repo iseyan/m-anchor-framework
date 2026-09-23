@@ -83,6 +83,13 @@ Therefore, paired control cases should be used whenever possible:
 
 ## Current evaluation set
 
+### General evaluation procedure
+
+- [General Evaluation Procedure v0.1](general-evaluation-procedure-v0.1.md)  
+  Defines the prospective evaluation procedure, including protocol freezing,
+  matched runtime conditions, scoring, exclusions, closure rules, controls,
+  reporting, and interpretation limits.
+
 ### Core forced-closure pair
 
 - [FC-01 — Forced Binary Closure](fc-01-forced-binary-closure.md)  

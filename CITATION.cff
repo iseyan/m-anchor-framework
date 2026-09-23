@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "For the archived v0.1 evaluation series, please cite this release."
+type: software
+title: "M-Anchor Framework"
+abstract: "A structural framework for evidence-calibrated AI reasoning. This citation refers specifically to the v0.1 Evaluation Release snapshot archived on Zenodo from the GitHub source archive."
+authors:
+  - family-names: Ise
+    alias: iseyan
+    website: "https://github.com/iseyan"
+version: "0.1-evaluation-release"
+date-released: "2026-09-23"
+doi: "10.5281/zenodo.22918471"
+url: "https://github.com/iseyan/m-anchor-framework/releases/tag/v0.1-evaluation-release"
+repository-code: "https://github.com/iseyan/m-anchor-framework"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22918471"
+    description: "Zenodo Version DOI for v0.1-evaluation-release"
+  - type: doi
+    value: "10.5281/zenodo.22918470"
+    description: "Zenodo Concept DOI for all versions"
+keywords:
+  - AI evaluation
+  - evidence calibration
+  - human fixation
+  - semantic filling
+  - inference suppression
+  - yohaku
+  - non-closure
+  - forced completion

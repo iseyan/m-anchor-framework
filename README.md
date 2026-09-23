@@ -476,6 +476,50 @@ It is a structural framework for controlling how conclusions are:
 
 The repository now includes a small runtime-evaluation track for M-Anchor Minimal v0.1 and related control conditions.
 
+### Current Research Question
+
+The current evaluation track is not primarily a test of whether M-Anchor
+"outperforms" a high-capability Baseline.
+
+It asks a more general structural question:
+
+> **Where do justified epistemic distinctions collapse under representation
+> or action constraints, and can a runtime preserve them until a justified
+> transition is available?**
+
+The v0.1 forced-completion pilots exposed one particularly clear instance of
+this problem.
+
+An epistemic assessment may contain distinctions that a downstream interface
+cannot represent. In the tested forced-binary case:
+
+```text
+Assessment state: unresolved
+Available interface states: A / B
+```
+
+The Baseline preserved the unresolved assessment in natural language while
+still submitting a binary value:
+
+> B — a forced choice, not a conclusion established by the evidence.
+
+This produces an observable divergence between assessment and representation.
+
+> **Language does not split the bit.**
+
+The binary case is not proposed as the complete definition of M-Anchor.
+It is a minimal example of a broader problem: a justified distinction can be
+lost when one processing layer requires a state transition that the preceding
+layer does not support.
+
+M-Anchor-derived non-closure is one tested runtime mechanism for preserving
+such distinctions. The framework itself should not be treated as the object
+that the experiments are designed to vindicate.
+
+For the focused report, see:
+
+- [Non-Closure under Forced Completion](reports/non-closure-under-forced-completion.md)
+
 ### M-Anchor v0.2 Draft Candidate
 
 The proposed v0.2 broadens M-Anchor from a human-impact-centered framework into a general reference frame for constraining unsupported expansion across assessment, representation, inherited state, authority, and action.

@@ -222,7 +222,7 @@ If the interface deletes that value and treats its absence as error, the empty s
 - That every relevant representation boundary is binary or one-bit.
 - That PD-01 or IF-01 would become discriminating if rewritten after the fact.
 
-Those last two items produced null discrimination and stay closed.
+PD-01 and IF-01 produced null discrimination and stay closed.
 
 ## 6. Why a report is already possible
 

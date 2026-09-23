@@ -1,20 +1,20 @@
 # M-Anchor Agent Evaluations
 
-Status: Experimental
-Framework version: M-Anchor Framework v0.1
+**Status:** Experimental  
+**Framework version:** M-Anchor Framework v0.1
 
-This directory contains behavioral evaluations for runtime implementations
+This directory contains behavioral evaluations of runtime implementations
 derived from the M-Anchor Framework.
 
 The purpose of these evaluations is not to reward uncertainty, refusal,
 or conservative answers as such.
 
-The central question is whether the agent preserves correspondence between:
+The central question is whether an agent preserves correspondence between:
 
-- available evidence,
-- the scope of justified inference,
-- epistemic commitment,
-- action recommendations,
+- available evidence;
+- the scope of justified inference;
+- epistemic commitment;
+- action recommendations;
 - and authorization.
 
 A successful M-Anchor implementation should preserve unresolved states when
@@ -51,44 +51,62 @@ Evaluations should distinguish at least the following failure modes:
 
 ## Comparison method
 
-Where possible, each evaluation should be run under matched conditions:
+Where possible, evaluations should be run under matched conditions:
 
-- same model,
-- same reasoning effort,
-- same environment,
-- same tools,
-- fresh session,
+- same model;
+- same reasoning effort;
+- same environment;
+- same tools;
+- same network conditions;
+- fresh session;
 - identical user prompt.
 
-The primary comparison is:
+The standard comparison is:
 
-1. Baseline agent
-2. M-Anchor runtime agent
+1. Baseline condition
+2. M-Anchor-derived runtime condition
 
-Agent identity should ideally be hidden during later human evaluation.
+Where additional controls are relevant, they should be specified before scored
+runs begin.
+
+Baseline is treated as an operational comparison condition, not as an
+assumption that the model has no provider-level or hidden instructions.
+
+Where practical, later human scoring should be performed without revealing
+which runtime condition produced a response.
 
 ## Interpretation
 
-A refusal to choose is not automatically a pass.
+A refusal to choose is not automatically a PASS.
 
-A forced choice is not automatically a fail.
+A forced choice is not automatically a FAIL.
 
-The evaluation asks whether the model's epistemic commitment is justified by
-the evidence available in that specific case.
+An uncertain answer is not automatically superior to a definite answer.
 
-Therefore, paired control cases should be used whenever possible:
+The relevant question is whether the observable epistemic commitment is
+justified by the evidence available in that specific case.
+
+Where practical, paired controls should include:
 
 - an evidence-insufficient case where unresolved status should be preserved;
 - an evidence-sufficient case where a definite conclusion should be reached.
 
-## Current evaluation set
+This guards against treating generalized non-commitment as successful
+epistemic calibration.
 
-### General evaluation procedure
+## General evaluation procedure
 
 - [General Evaluation Procedure v0.1](general-evaluation-procedure-v0.1.md)  
   Defines the prospective evaluation procedure, including protocol freezing,
   matched runtime conditions, scoring, exclusions, closure rules, controls,
   reporting, and interpretation limits.
+
+**Current status:** Draft — not yet frozen.
+
+New prospective stress tests should not be run under this procedure until the
+draft has been reviewed and frozen.
+
+## Current evaluation set
 
 ### Core forced-closure pair
 
@@ -101,7 +119,8 @@ Therefore, paired control cases should be used whenever possible:
 ### Ablation and control conditions
 
 - [ZA-01 — Forced Closure Ablation](za-01-forced-closure-ablation.md)  
-  Compares Baseline, Generic Caution, M-Anchor Non-Closure Minimal, and M-Anchor Minimal on the FC-01 pair.
+  Compares Baseline, Generic Caution, M-Anchor Non-Closure Minimal, and
+  M-Anchor Minimal on the FC-01 pair.
 
 - [Generic Caution Control v0.1](generic-caution-control-v0.1.md)  
   Fixed generic-caution condition without explicit non-closure permission.
@@ -109,11 +128,13 @@ Therefore, paired control cases should be used whenever possible:
 ### Recording protocol
 
 - [Assessment vs. Interface](protocol-assessment-vs-interface.md)  
-  Adds observable assessment state, interface action, and optional failure subtype without changing the original PASS/FAIL rule.
+  Records observable assessment state, interface action, and optional failure
+  subtype without changing the original PASS/FAIL rule.
 
 ### Related pilot reports
 
-The following pilots are recorded under `reports/` rather than as standalone eval specifications:
+The following exploratory pilots are recorded under `reports/` rather than as
+standalone evaluation specifications:
 
 - [Three-Pair Engineering Pilot](../reports/m-anchor-minimal-v0.1-three-pair-pilot.md)
 - [Conversational Stress Pilot](../reports/m-anchor-minimal-v0.1-conversational-stress-pilot-2026-09-23.md)
@@ -125,5 +146,17 @@ The following pilots are recorded under `reports/` rather than as standalone eva
 
 - [Non-Closure under Forced Completion](../reports/non-closure-under-forced-completion.md)
 
-These evaluations are exploratory engineering records and do not constitute empirical validation of the framework. Null results are retained as results, and closed items should not be strengthened retroactively after observing their outcomes.
+## Current evidential status
 
+The completed evaluations currently listed above are exploratory engineering
+records and do not constitute empirical validation of the framework.
+
+Null results are retained as results.
+
+Baseline advantages and M-Anchor failures are retained as results.
+
+Closed evaluation items should not be strengthened or rescored retroactively
+after observing their outcomes.
+
+Future prospective evaluations will be reported separately once the
+General Evaluation Procedure v0.1 has been frozen.

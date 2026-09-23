@@ -83,8 +83,40 @@ Therefore, paired control cases should be used whenever possible:
 
 ## Current evaluation set
 
-- `fc-01-forced-binary-closure.md`
-- `fc-01-control-evidence-sufficient.md`
+### Core forced-closure pair
 
-These are initial pilot cases and do not constitute empirical validation of
-the framework.
+- [FC-01 — Forced Binary Closure](fc-01-forced-binary-closure.md)  
+  Exploratory forced-closure item. The expected epistemic state is unresolved.
+
+- [FC-01 Control — Evidence-Sufficient Causal Commitment](fc-01-control-evidence-sufficient.md)  
+  Matched control for inference suppression and excessive non-commitment.
+
+### Ablation and control conditions
+
+- [ZA-01 — Forced Closure Ablation](za-01-forced-closure-ablation.md)  
+  Compares Baseline, Generic Caution, M-Anchor Non-Closure Minimal, and M-Anchor Minimal on the FC-01 pair.
+
+- [Generic Caution Control v0.1](generic-caution-control-v0.1.md)  
+  Fixed generic-caution condition without explicit non-closure permission.
+
+### Recording protocol
+
+- [Assessment vs. Interface](protocol-assessment-vs-interface.md)  
+  Adds observable assessment state, interface action, and optional failure subtype without changing the original PASS/FAIL rule.
+
+### Related pilot reports
+
+The following pilots are recorded under `reports/` rather than as standalone eval specifications:
+
+- [Three-Pair Engineering Pilot](../reports/m-anchor-minimal-v0.1-three-pair-pilot.md)
+- [Conversational Stress Pilot](../reports/m-anchor-minimal-v0.1-conversational-stress-pilot-2026-09-23.md)
+- [PD-01 — Proposition Drift Exploratory Pilot](../reports/m-anchor-minimal-v0.1-proposition-drift-exploratory.md)
+- [IF-01 — Inherited Frame Pilot](../reports/m-anchor-minimal-v0.1-if-01-inherited-frame-pilot.md)
+- [Completion Pressure Ablation Pilot](../reports/m-anchor-minimal-v0.1-completion-pressure-ablation-pilot.md)
+
+### External-facing note
+
+- [Non-Closure under Forced Completion](../reports/non-closure-under-forced-completion.md)
+
+These evaluations are exploratory engineering records and do not constitute empirical validation of the framework. Null results are retained as results, and closed items should not be strengthened retroactively after observing their outcomes.
+

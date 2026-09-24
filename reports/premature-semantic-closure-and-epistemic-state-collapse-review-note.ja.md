@@ -1,131 +1,151 @@
-# Separate Review Note
+# 別紙レビュー
 
-**Purpose:** PSC / IESCによる再整理のうち、既存M-Anchor文書より強い、または現時点でまだ確立されていないclaimを特定する。
+**目的:** PSC / IESCによる再整理のうち、既存のM-Anchor文書より強い主張、または現時点ではまだ確立されていない主張を明示する。
 
-このnoteは意図的にreport本文から分離する。
-
-## 1. 「Premature Semantic Closure」は新しいOrganizing Labelである
-
-既存repositoryには、すでに密接に関連するconceptが存在する。
-
-- Forced Closure / State Collapse
-- Drift / Contamination
-- Unsupported Expansion
-- Semantic Filling
-- epistemic promotion
-- assessment–representation mismatch
-
-しかし、**Premature Semantic Closure**は現在canonicalなM-Anchor termではない。
-
-research-level umbrellaとして用いることはv0.2-rc1と合理的に整合する。ただし、既存のfive-mode taxonomyを暗黙に置き換えてはならない。
-
-特に、Forced Closure、Drift、Unsupported Expansionを区別不能にしてはならない。
-
-**Recommended status:** canonical failure modeではなく、candidate research construct。
+この文書は、意図的に本体レポートから分離している。
 
 ---
 
-## 2. 「Irreversible Epistemic State Collapse」は既存Evidenceより実質的に強い
+## 1. 「早すぎる意味的閉包（PSC）」は新しい統括的な研究ラベルである
 
-repositoryは、epistemic distinctionがrepresentation boundaryで失われ得ることを示している。
+既存のリポジトリには、すでに密接に関連する概念が存在する。
 
-しかし、irreversible downstream propagationをexperimentally establishしてはいない。
+- 強制閉包／状態崩壊
+- ドリフト／汚染
+- 根拠なき拡張
+- 過剰な意味付け
+- 認識上の無断昇格
+- 評価と表現の不一致
 
-`non-closure-under-forced-completion.md`は、次のempirical stepとして、discrete tokenしか見ることのできないconsumerを接続することを明示的に挙げている。
+しかし、**早すぎる意味的閉包（Premature Semantic Closure / PSC）**は、現時点ではM-Anchorの正典上の用語ではない。
+
+これを研究全体を束ねる上位概念として用いることは、v0.2-rc1と概ね整合する。ただし、既存の五つの失敗類型を暗黙に置き換えてはならない。
+
+特に、強制閉包、ドリフト、根拠なき拡張の区別を失わせてはならない。
+
+**推奨される位置づけ:** 正典上の失敗類型ではなく、研究上の候補概念。
+
+---
+
+## 2. 「不可逆的認識状態崩壊（IESC）」は、現在の証拠より実質的に強い概念である
+
+現在のリポジトリから確認できるのは、認識上の区別が表現境界で失われ得るということである。
+
+しかし、そこから先の**不可逆的な下流伝播**までは、まだ実験的に確認されていない。
+
+`non-closure-under-forced-completion.md`でも、次の実証段階として、離散的な値だけを受け取る下流側の受け手を接続することが明示されている。
 
 したがって、
 
-> assessment `unresolved` → serialized `B`
+> 評価状態 `unresolved` → 直列化された値 `B`
 
-は観測されているが、
+は観測されている。
 
-> serialized `B` → downstream systemが`B`をfactとしてirreversibly inheritする
+一方で、
 
-ことは観測されていない。
+> 直列化された `B` → 下流システムが `B` を事実として不可逆的に継承する
 
-したがって **irreversible** は、workflow-relative information-loss definitionに限定すべきである。
+という過程は、まだ観測されていない。
 
-> earlier distinctionをretained downstream artifactだけから再構成できない。
+したがって、**不可逆的**という語は、次のようなワークフロー内に限定した情報喪失の意味で用いるべきである。
 
-permanent system state、long-context contamination、real-world irreversibilityについてのより強いclaimは、現在のevidenceを超える。
+> 先行工程に存在した区別を、保持された下流側の出力だけからは再構成できない。
 
----
-
-## 3. Summary CompressionはClosureのObserved Causeではない
-
-proposed architectureはsummary compressionをcandidate transition pressureとして扱う。
-
-これは、summary compressionをDriftのpossible sourceとして挙げるv0.2 / rc1とconceptually consistentである。
-
-しかしactual PD-01 experimentは、final two-sentence summary compressionを含めて **null result** を生じた。
-
-したがって、repositoryがsummary compressionによるstate collapseを示したと書くことはsemantic driftになる。
-
-current supportは次に限定される。
-
-> summary compressionはplausible future test familyである。
+これを越えて、システム全体に永久に固定される状態、長文脈全体への汚染、現実世界での不可逆性まで主張することは、現在の証拠を超える。
 
 ---
 
-## 4. Structured-Output Collapseはまだテストされていない
+## 3. 要約圧縮は、閉包を起こす原因としてまだ観測されていない
 
-forced binary outputからJSON schema、classifier、API、その他のstructured interfaceへ一般化することはstructurally plausibleであり、v0.2 documentでも想定されている。
+今回の設計構造では、要約圧縮を認識状態変化を引き起こし得る候補圧力として扱っている。
 
-それでもcurrent experimental recordの中心はforced A/B epistemic interfaceである。
+これは、v0.2 / v0.2-rc1が要約圧縮をドリフトの原因候補として挙げていることとは整合する。
 
-structured outputが一般的にPSCを生じさせるというclaimは、現在のevidenceを超える。
+しかし、実際のPD-01では、最終段階の二文要約まで含めて**条件間の差は観測されなかった**。
 
-prospective hypothesisのままにすべきである。
+したがって、
+
+> リポジトリの実験によって、要約圧縮が状態崩壊を起こすことが示された
+
+と書けば、既存結果からの意味上のずれになる。
+
+現在支持されるのは、次の範囲に限られる。
+
+> 要約圧縮は、今後検証する価値のある試験系列候補である。
 
 ---
 
-## 5. Action PressureをEpistemic Closureと統合してはならない
+## 4. 構造化出力による状態崩壊は、まだテストされていない
 
-v0.2-rc1は、このdistinctionを明示的に修正した。
+強制二択から、JSON形式、分類器、API、そのほかの構造化された出力形式へ問題を拡張することは、構造上は十分に考えられる。また、v0.2文書もその種の表現境界を想定している。
 
-required decision bitは、underlying factual assessmentがunresolvedであってもlegitimateであり得る。
+しかし、現在の実験記録の中心は、因果評価についてA/Bのどちらかを強制する認識論的な二択インターフェースである。
 
-例：
+したがって、
+
+> 構造化出力は一般にPSCを発生させる
+
+という主張は、現在の証拠を超える。
+
+現段階では、今後事前に設計して検証すべき仮説として扱うべきである。
+
+---
+
+## 5. 行動圧力と認識論的閉包を一つにしてはならない
+
+v0.2-rc1では、この区別が明示的に修正されている。
+
+基礎となる事実評価が未解決であっても、行動上の決定を行うこと自体は正当であり得る。
+
+例えば、
 
 ```text
-cause = unresolved
-decision = evacuate
+原因評価 = 未解決
+行動決定 = 避難
 ```
 
-これは自動的にState Collapseではない。
+という状態は、自動的に状態崩壊を意味しない。
 
-すべてのforced actionをepistemic collapseとして扱うPSC / IESC formulationは、v0.2-rc1のepistemic bit / decision bit distinctionから後退する。
+未解決の原因評価のもとでも、損失回避、方針、予防原則、権限、必要性、緊急性などによって、避難という決定が正当化される場合がある。
 
-これは新しいframingにおける最も大きなsemantic drift riskである。
+したがって、すべての強制的な行動決定を認識状態の崩壊として扱うPSC / IESCの定式化は、v0.2-rc1が導入した**認識ビットと決定ビットの区別**から後退する。
+
+これは、新しい再整理において最も注意すべき意味上のずれである。
 
 ---
 
-## 6. M-Anchorを「Architecture」と呼ぶことはv0.2-rc1とは整合するがCanonical v0.1より広い
+## 6. M-Anchorを「設計構造」として扱うことはv0.2-rc1とは整合するが、正典版v0.1より広い
 
-canonical v0.1は依然として主としてhuman-impact normative frameworkである。
+正典であるv0.1は、依然として主として人間への影響を伴う推論のための規範的枠組みである。
 
-Assessment / Representation / Action architectureは、non-canonicalなv0.2 draftおよびv0.2-rc1で展開された。
+評価・表現・行動を分離する一般構造は、正典ではないv0.2草案およびv0.2-rc1で展開された。
 
-したがってreportはM-Anchorを **candidate mitigation architecture** と合理的に記述できるが、canonical v0.1がすでにこのfull general architectureを確立していたと示唆してはならない。
+したがって、本体レポートがM-Anchorを**候補となる緩和設計構造**として記述すること自体は合理的である。
 
-historical sequenceはvisibleなまま維持すべきである。
+ただし、
+
+> 正典版v0.1の段階ですでに、この一般化された設計構造全体が確立されていた
+
+と読める形にしてはならない。
+
+歴史的な展開順序は明示したままにすべきである。
 
 ```text
-v0.1 human-impact framework
-→ pilot observations
-→ representation-boundary problem
-→ v0.2 generalization
-→ v0.2-rc1 corrections
-→ PSC / IESC research reframing
+v0.1 人間影響領域を中心とする枠組み
+→ pilotでの観測
+→ 表現境界の問題の発見
+→ v0.2での一般化
+→ v0.2-rc1での修正
+→ PSC / IESCという研究上の再整理
 ```
 
 ---
 
-## 7. FC-01はGeneral M-Anchor Advantageを支持できない
+## 7. FC-01からM-Anchorの一般的優位性を主張することはできない
 
-FC-01は **post hoc exploratory stress test** のままにすべきである。
+FC-01は、**事後的・探索的ストレステスト**として位置づけたままにすべきである。
 
-ZA-01は有用なexploratory ablationを追加する。
+ZA-01は、その周辺要因を切り分ける探索的試験を追加した。
 
 ```text
 Baseline                 FAIL / PASS
@@ -134,98 +154,115 @@ Non-Closure Minimal      PASS / PASS
 M-Anchor Minimal         PASS / PASS
 ```
 
-これは、そのpairにおけるexplicit non-closure permissionについてのnarrow mechanism hypothesisを支持する。
+この結果が支持するのは、その一組の試験において、**未解決状態を維持してよいという明示的許可**が関係した可能性がある、という限定的な機序仮説である。
 
-それは次を確立しない。
+この結果だけから、次のことは確立できない。
 
-- general M-Anchor superiority
-- general Baseline vulnerability
-- forced closureのprevalence
-- untested modelへのtransfer
-- structured interfaceへのtransfer
-- real-world AI incidentのprevention
+- M-Anchorが一般にBaselineより優れていること
+- Baseline一般が同じ弱点を持つこと
+- 強制閉包がどの程度の頻度で起こるか
+- 他のモデルでも同じ結果になること
+- 他の構造化インターフェースでも同じ結果になること
+- 現実のAI事故をM-Anchorが防止できること
 
-main draftはこのlimitationを維持している。
+本体レポートでは、この制限を維持している。
 
 ---
 
-## 8. Current Null ResultsはStructural Hypothesisを制約する
+## 8. 現在の「差なし」という結果は、構造仮説を制約する
 
-次のresultは、「まだ正しいstress testを見つけていない」こととしてではなく、actual resultとして保持しなければならない。
+次の結果は、「まだ適切なストレステストを見つけられていない」という扱いにしてはならない。
+
+それぞれ、現在得られている正式な観測結果として保持する必要がある。
 
 ```text
-Three-pair pilot:          null discrimination
-Conversational stress:    null discrimination
-PD-01:                     null discrimination
-IF-01:                     null discrimination
+Three-pair pilot:          条件間の差なし
+Conversational stress:    条件間の差なし
+PD-01:                     条件間の差なし
+IF-01:                     条件間の差なし
 ```
 
-future PSC programはnew testを生成できるが、これらclosed testをretroactively strengthenしたり、positive evidenceとしてreinterpretしたりしてはならない。
+今後PSCに関する新しい試験を作成することはできる。
 
-これはGeneral Evaluation Procedureに直接従う。
+しかし、すでに終了したこれらの試験を結果観測後に強化したり、後からPSCを支持する正の証拠として読み替えたりしてはならない。
+
+これは `General Evaluation Procedure v0.1` の方法論に直接従う。
 
 ---
 
-## 9. General Evaluation ProcedureはまだFrozenではない
+## 9. General Evaluation Procedureはまだ凍結されていない
 
-`evals/general-evaluation-procedure-v0.1.md`のstatusは現在、
+`evals/general-evaluation-procedure-v0.1.md` の現在の状態は、
 
 > Draft — not yet frozen
 
 である。
 
-したがって、future PSC / IESC seriesは、scored runより前にprotocolがreview、freeze、commitされるまで、そのprocedure下のprospective evaluationとして記述すべきではない。
+したがって、今後のPSC / IESC試験系列を、この手順に基づく**事前規定型評価**として扱うには、採点対象の実行より前に、手順がレビューされ、凍結され、GitHub上で固定されている必要がある。
 
-current reportはresearch programを定義できるが、prospective validationが開始済みであるとclaimしてはならない。
+現在の本体レポートは、今後の研究計画を定義することはできる。
 
----
+しかし、
 
-## 10. “Without an Evidential Update”には一つTechnical Qualificationが必要である
+> PSC / IESCの事前規定型の実証評価がすでに開始されている
 
-中心research questionをabsence of evidential updateの周囲に構成することは適切である。
-
-しかしv0.2-rc1は、他にもlegitimate transition basisが存在することを認めている。
-
-stateまたはdecisionは次によって正当に変化し得る。
-
-- valid rule or policy
-- 自らevidenceを生成するcertified procedure
-- explicitly declared conditional assumption
-- loss function
-- authority
-- necessity
-- urgency
-
-raw factual evidenceが変化していないという理由だけで、これらをPSCとmisclassifyしてはならない。
-
-evaluation上、意図されたtargetは次のように理解すべきである。
-
-> new evidence **またはそのepistemic promotionを独立に正当化するその他のbasis**がないにもかかわらず、よりstrongなepistemic commitmentへ移行すること。
-
-decision changeは別にscoreすべきである。
+と主張することはできない。
 
 ---
 
-## 11. Repository Source-Integrity Note
+## 10. 「証拠更新なしに」という中心表現には、一つ技術的な限定が必要である
 
-`operational-specs/case-02-implementation-baseline-1.md`は現在、`Two-Track Processing` text diagramの途中で終了し、その直後に複数のheadingが続くように見える。
+中心研究質問を「証拠更新なしに、より強い認識上の確定へ移るか」という形で置くことは適切である。
 
-前半sectionはreadableであり、reportで用いたstrong-conclusion / protective-action distinctionを支持する。しかし、そのtruncationより後のmaterialは、fileが別途確認されるまでcomplete operational specificationとして扱うべきではない。
+ただし、v0.2-rc1は、証拠そのものの追加以外にも正当な状態変化の根拠があり得ることを認めている。
 
-これはrepository-integrity observationであり、M-Anchorについてのsemantic claimではない。
+評価状態または行動決定は、例えば次によって正当に変化し得る。
+
+- 妥当な規則または方針
+- それ自体が新しい証拠を生む認証済み手続
+- 明示された条件付き仮定
+- 損失関数
+- 権限
+- 必要性
+- 緊急性
+
+したがって、元の事実証拠が変化していないという理由だけで、これらによる正当な変化までPSCに分類してはならない。
+
+評価上の対象は、より正確には次のように理解すべきである。
+
+> **新しい証拠、または認識上の確定強化を独立に正当化する別の根拠がないにもかかわらず、より強い認識上の確定へ移行すること。**
+
+また、行動決定の変化は、認識状態の変化とは別に評価すべきである。
 
 ---
 
-## Overall Assessment
+## 11. リポジトリ資料の完全性に関する注記
 
-proposed reframingは、`core-principles-v0.2-rc1.md`およびcompletion-pressure reportがすでに向かっている方向と広く整合する。
+`operational-specs/case-02-implementation-baseline-1.md` は現在、`Two-Track Processing` のテキスト図の途中で実質的に終了し、その直後に複数の見出しが続いているように見える。
 
-最も安全なformulationは次である。
+前半部分は問題なく読むことができ、本体レポートで参照した、
 
-> **PSCはcandidate cross-boundary failure hypothesisである。IESCはcandidate downstream information-loss conditionである。M-Anchorはjustified state distinctionとtransition traceabilityを保存するcandidate mitigation architectureである。**
+- 十分に支持された強い結論を認めること
+- 保護行動と最終的な事実認定を分離すること
 
-existing repositoryは、まだ次を正当化しない。
+という区別を支持している。
 
-> PSC / IESCはAI異常のdemonstrated general structural causeであり、M-Anchorはそのvalidated general solutionである。
+しかし、欠落しているように見える箇所以降については、別途ファイルの完全性を確認するまで、完全な運用仕様として扱うべきではない。
 
-このよりstrongなformulationはcurrent reportの外に置くべきである。
+これはリポジトリ資料の完全性に関する観測であり、M-Anchorの意味内容についての主張ではない。
+
+---
+
+## 総合評価
+
+今回の再整理は、`core-principles-v0.2-rc1.md` およびcompletion-pressure系列のreportがすでに向かっている方向と概ね整合する。
+
+現時点で最も安全な表現は次である。
+
+> **PSCは、処理境界をまたいで生じる失敗についての候補仮説である。IESCは、下流工程で起こり得る情報喪失状態の候補である。M-Anchorは、正当化された状態の区別と遷移の追跡可能性を維持するための候補となる緩和設計構造である。**
+
+一方、現在のリポジトリは、まだ次の強い主張を正当化しない。
+
+> PSC / IESCはAI異常を引き起こす一般的な構造原因として実証されており、M-Anchorはその一般解として実証済みである。
+
+この強い表現は、現段階では本体レポートの外に置くべきである。

@@ -1,5 +1,9 @@
 # M-Anchor Framework
 
+Break this gate.
+Public Phase A adversarial trial for the M-Anchor containment gate:
+https://huggingface.co/spaces/iseyan/m-anchor-containment-gate
+
 [日本語 README](README.ja.md)
 
 ## A design framework for preserving evidence-based distinctions across outputs, records, and actions
